@@ -23,6 +23,18 @@ async function request(path, body) {
 
 export default function ReplayDemo() {
   const [demo, setDemo] = useState(null), [error, setError] = useState(''), [notice, setNotice] = useState('');
+  const [publicMedia, setPublicMedia] = useState('');
+  useEffect(() => {
+    if (!PUBLIC_DEMO) return;
+    const controller = new AbortController(); let active = true, objectUrl;
+    // The small public clip is fully loaded so seeking also works on static hosts
+    // that do not serve HTTP byte ranges.
+    fetch('/demo-assets/research-methods-5min.mp4', { signal: controller.signal })
+      .then(response => { if (!response.ok) throw new Error('示例视频暂时无法加载'); return response.blob(); })
+      .then(blob => { if (active) { objectUrl = URL.createObjectURL(blob); setPublicMedia(objectUrl); } })
+      .catch(e => { if (active && e.name !== 'AbortError') setError(e.message); });
+    return () => { active = false; controller.abort(); if (objectUrl) URL.revokeObjectURL(objectUrl); };
+  }, []);
   const [position, setPosition] = useState(0), [playing, setPlaying] = useState(false), [speed, setSpeed] = useState(1);
   const [board, setBoard] = useState({ connected: false, ports: [] }), [port, setPort] = useState('COM3'), [connecting, setConnecting] = useState(false);
   const [tab, setTab] = useState('transcript'), [marks, setMarks] = useState([]), [choices, setChoices] = useState({});
@@ -113,7 +125,7 @@ export default function ReplayDemo() {
       <div className="replay-main-column">
         <section className="replay-player-panel" aria-label="五分钟课程回放">
           <div className="replay-video-stage">
-            {demo.mediaReady ? <video ref={video} src={PUBLIC_DEMO ? '/demo-assets/research-methods-5min.mp4' : SERVICE + '/media'} preload="metadata" playsInline
+            {demo.mediaReady ? <video ref={video} src={PUBLIC_DEMO ? publicMedia || undefined : SERVICE + '/media'} preload={PUBLIC_DEMO ? 'auto' : 'metadata'} playsInline
               onTimeUpdate={() => { setPosition(video.current?.currentTime || 0); sync(); }}
               onPlay={() => { setPlaying(true); sync(true); }} onPause={() => { setPlaying(false); sync(true); }}
               onSeeked={() => { setPosition(video.current?.currentTime || 0); sync(true); }}

@@ -4,7 +4,7 @@ import fs from 'node:fs/promises';
 import assert from 'node:assert/strict';
 import { chromium } from 'playwright';
 const root = path.resolve(process.argv[2]);
-const app = express(); app.use(express.static(path.join(root, 'dist'))); app.get('*', (req, res) => res.sendFile(path.join(root, 'dist/index.html')));
+const app = express(); app.use(express.static(path.join(root, 'dist'), { acceptRanges: false })); app.get('*', (req, res) => res.sendFile(path.join(root, 'dist/index.html')));
 const server = await new Promise(resolve => { const s = app.listen(0, '127.0.0.1', () => resolve(s)); });
 const base = `http://127.0.0.1:${server.address().port}`;
 const browser = await chromium.launch({ headless: true, channel: 'chrome', args: ['--use-angle=swiftshader', '--enable-unsafe-swiftshader'] });
