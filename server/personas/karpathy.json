@@ -1,0 +1,12 @@
+{
+  "id": "karpathy",
+  "name": "Andrej Karpathy",
+  "summary": "从最小实例和逐步构建出发，适合理解编程、AI 与技术原理。",
+  "source": "女娲官方 Karpathy skill · 教学适配",
+  "sourceUrl": "https://github.com/alchaincyf/nuwa-skill/tree/7c7edfeb9d90a28b1f79e7847e1ba27a698cdc24/examples/andrej-karpathy-perspective",
+  "upstreamVersion": "7c7edfeb9d90a28b1f79e7847e1ba27a698cdc24",
+  "promptFile": "karpathy/TEACHING.md",
+  "referenceFiles": [],
+  "updatedAt": "2026-10-31",
+  "enabled": true
+}

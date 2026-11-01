@@ -1,0 +1,30 @@
+{
+  "repository": "https://github.com/alchaincyf/nuwa-skill",
+  "commit": "7c7edfeb9d90a28b1f79e7847e1ba27a698cdc24",
+  "license": "MIT",
+  "copyright": "Copyright (c) 2026 Huashu (花叔)",
+  "reviewedAt": "2026-10-31",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "upstreamPath": "SKILL.md",
+      "sha256": "218d2d2b0003255d152772f46586a39874d94d0df3480b5a6f51a274ef2249fd"
+    },
+    {
+      "path": "references/extraction-framework.md",
+      "upstreamPath": "references/extraction-framework.md",
+      "sha256": "71ba03c80f86141a5adaec1690e510d821ecfc30eca5dcf7b455ec6df2339e81"
+    },
+    {
+      "path": "references/fidelity-scorecard.md",
+      "upstreamPath": "references/fidelity-scorecard.md",
+      "sha256": "6f1a488529a087e211cbabdc46f6607838b685757f413db81522ec6db8c574e3"
+    },
+    {
+      "path": "references/skill-template.md",
+      "upstreamPath": "references/skill-template.md",
+      "sha256": "edce635b679f99194ad35f586b559d2f188201f4d19cfe3badd5ca03c379e175"
+    }
+  ],
+  "execution": "Text only. Upstream scripts and automatic version checks are not installed or run."
+}

@@ -1,0 +1,12 @@
+{
+  "id": "feynman",
+  "name": "费曼",
+  "summary": "从具体例子讲起，用类比、反例和复述检查是否真正理解。",
+  "source": "女娲官方费曼 skill · 教学适配",
+  "sourceUrl": "https://github.com/alchaincyf/nuwa-skill/tree/7c7edfeb9d90a28b1f79e7847e1ba27a698cdc24/examples/feynman-perspective",
+  "upstreamVersion": "7c7edfeb9d90a28b1f79e7847e1ba27a698cdc24",
+  "promptFile": "feynman/TEACHING.md",
+  "referenceFiles": [],
+  "updatedAt": "2026-10-31",
+  "enabled": true
+}

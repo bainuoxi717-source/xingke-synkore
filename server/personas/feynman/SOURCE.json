@@ -1,0 +1,15 @@
+{
+  "repository": "https://github.com/alchaincyf/nuwa-skill",
+  "commit": "7c7edfeb9d90a28b1f79e7847e1ba27a698cdc24",
+  "license": "MIT",
+  "copyright": "Copyright (c) 2026 Huashu (花叔)",
+  "reviewedAt": "2026-10-31",
+  "files": [
+    {
+      "path": "upstream/SKILL.md",
+      "upstreamPath": "examples/feynman-perspective/SKILL.md",
+      "sha256": "3aa96eb60bfa2da5f7376a7d02bb0bc2a71ee07b6b613c585da763e95bb6a519"
+    }
+  ],
+  "execution": "Text only. Upstream scripts and automatic version checks are not installed or run."
+}

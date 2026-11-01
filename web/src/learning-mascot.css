@@ -1,0 +1,250 @@
+@font-face { font-family: 'Synkore Pixel'; src: url('/assets/fonts/FusionPixel-12px-zh_hans.woff2') format('woff2'); font-weight: 400; font-style: normal; font-display: swap; }
+.learning-mascot {
+  --mascot-period: 12s;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  isolation: isolate;
+  overflow: visible;
+}
+.mascot-ambience {
+  position: absolute;
+  width: min(560px, 100%);
+  height: 240px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(ellipse, #8aa98c0d 0%, #718d8707 38%, transparent 70%);
+  z-index: 0;
+}
+.mascot-floor-glow {
+  position: absolute;
+  width: 290px;
+  height: 35px;
+  left: 50%;
+  bottom: 9px;
+  transform: translateX(-50%);
+  background: radial-gradient(ellipse, #adca971c, #688f7e0a 45%, transparent 70%);
+  filter: blur(8px);
+}
+.mascot-shadow {
+  position: absolute;
+  width: 200px;
+  height: 20px;
+  left: calc(50% - 100px);
+  bottom: 17px;
+  border-radius: 50%;
+  background: radial-gradient(ellipse, #b9d7bd12, transparent 68%);
+  transform-origin: center;
+  animation: mascot-shadow-breathe var(--mascot-period) ease-in-out infinite;
+}
+.mascot-character-frame {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 225.33px;
+  height: 225.33px;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.mascot-character-frame:has(.is-dragging) { z-index: 5; }
+.mascot-3d { position: relative; width: 100%; height: 100%; pointer-events: auto; touch-action: pan-y; cursor: grab; user-select: none; -webkit-user-select: none; outline: none; }
+.mascot-3d.is-dragging { cursor: grabbing; }
+.mascot-3d:focus-visible { outline: 1px dashed #b7c9a65c; outline-offset: 2px; border-radius: 28px; }
+.mascot-3d-viewport { position: absolute; inset: 0; }
+.mascot-3d-viewport canvas { width: 100%; height: 100%; display: block; pointer-events: none; }
+.mascot-3d-fallback { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; pointer-events: none; }
+.mascot-3d[data-status="fallback"] { cursor: default; }
+.mascot-rotate-hint { position: absolute; left: 50%; bottom: -6px; transform: translateX(-50%); color: #a4b494; font-size: 10px; letter-spacing: 1px; white-space: nowrap; pointer-events: none; opacity: .58; transition: opacity .2s; }
+.mascot-rotate-hint > span:first-child { margin-right: 3px; font-size: 14px; }
+.mascot-3d[data-interacted="true"] .mascot-rotate-hint { opacity: 0; }
+.mascot-3d:hover .mascot-rotate-hint, .mascot-3d:focus-visible .mascot-rotate-hint { opacity: .85; }
+.mascot-keyboard-hint { display: none; }
+.mascot-3d:focus-visible .mascot-keyboard-hint { display: inline; font-size: 9px; letter-spacing: 0; }
+.mascot-character {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-origin: 50% 65%;
+  animation: mascot-float var(--mascot-period) cubic-bezier(.4, 0, .25, 1) infinite;
+  will-change: transform;
+  filter: drop-shadow(0 13px 12px #0008) drop-shadow(-4px 0 10px #b8dac50a);
+}
+.mascot-body {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: contain;
+  user-select: none;
+}
+.mascot-face {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  color: #303735;
+}
+.mascot-gaze {
+  animation: mascot-look var(--mascot-period) ease-in-out infinite;
+}
+.mascot-eye { fill: currentColor; transform-box: fill-box; transform-origin: center; }
+.mascot-eye-left { animation: mascot-blink-left var(--mascot-period) ease-in-out infinite; }
+.mascot-eye-right { animation: mascot-blink-right var(--mascot-period) ease-in-out infinite; }
+.mascot-smile, .mascot-wink, .mascot-happy-eyes {
+  stroke: currentColor;
+  stroke-width: 7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.mascot-smile {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: mascot-smile-change var(--mascot-period) ease-in-out infinite;
+}
+.mascot-wink { opacity: 0; animation: mascot-wink-show var(--mascot-period) ease-in-out infinite; }
+.mascot-happy-eyes { opacity: 0; animation: mascot-happy-show var(--mascot-period) ease-in-out infinite; }
+.mascot-grin { fill: currentColor; opacity: 0; animation: mascot-grin-show var(--mascot-period) ease-in-out infinite; }
+.mascot-orbit {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: min(610px, 110%);
+  height: 305px;
+  transform: translate(-50%, -42%);
+  overflow: visible;
+}
+.mascot-orbit-back { z-index: 1; opacity: .63; }
+.mascot-orbit-front { z-index: 3; opacity: .67; }
+.mascot-orbit-glow { animation: mascot-orbit-breathe 6s ease-in-out infinite; }
+.mascot-orbit-line { opacity: .7; }
+.mascot-orbit-dust { opacity: .5; animation: mascot-orbit-drift var(--mascot-period) linear infinite; }
+.mascot-orbit-back .mascot-orbit-dust { animation-direction: reverse; }
+.mascot-orbit-inner { opacity: .35; }
+.mascot-stars { position: absolute; width: min(560px, 100%); height: 100%; top: 0; left: 50%; transform: translateX(-50%); z-index: 1; }
+.mascot-stars i {
+  position: absolute;
+  border-radius: 50%;
+  background: #dbeaca;
+  box-shadow: 0 0 7px #c6e1ae50;
+  opacity: .35;
+  animation: mascot-star-breathe 6s ease-in-out infinite;
+}
+.learning-mascot.is-paused *, .learning-mascot.is-paused *::before, .learning-mascot.is-paused *::after { animation-play-state: paused !important; }
+
+/* All three planets follow the same SVG ellipse; their labels stay upright. */
+.mascot-planet-carrier { position: absolute; left: 0; top: 0; width: 0; height: 0; visibility: hidden; pointer-events: none; will-change: transform; }
+.mascot-planet-carrier:hover, .mascot-planet-carrier:focus-within { z-index: 6 !important; }
+.mascot-planet-button { width: 92px; height: 92px; border: 0; padding: 0; background: transparent; display: grid; place-items: center; position: absolute; left: 0; top: 0; transform: translate(-50%, -50%); pointer-events: auto; cursor: pointer; border-radius: 50%; color: #c4dba9; }
+.mascot-planet-system { --planet-rgb: 181, 213, 147; position: relative; display: grid; place-items: center; width: 46px; height: 46px; transform: scale(2); pointer-events: none; isolation: isolate; }
+.mascot-planet-carrier.feed .mascot-planet-system { --planet-rgb: 140, 197, 208; }
+.mascot-planet-carrier.classroom .mascot-planet-system { --planet-rgb: 222, 181, 132; }
+.mascot-planet-halo { position: absolute; inset: -17px; border-radius: 50%; background: radial-gradient(circle, rgba(var(--planet-rgb), .16), rgba(var(--planet-rgb), .045) 42%, transparent 69%); animation: mascot-halo-breathe 7s ease-in-out infinite; z-index: -1; }
+.mascot-planet-halo::after { content: ''; position: absolute; inset: 11px; border: 1px solid rgba(var(--planet-rgb), .12); border-radius: 50%; }
+.mascot-planet-local-ring { position: absolute; left: -11px; top: 12px; width: 68px; height: 23px; border: 1px solid rgba(var(--planet-rgb), .4); border-bottom-color: rgba(var(--planet-rgb), .75); border-radius: 50%; transform: rotate(-24deg); box-shadow: 0 1px 5px rgba(var(--planet-rgb), .1); z-index: 0; }
+.mascot-planet-local-ring.ring-front { z-index: 3; clip-path: inset(49% -8px -8px -8px); }
+.mascot-planet-system > .mascot-planet-globe { z-index: 1; }
+.mascot-satellite-route { position: absolute; width: 78px; height: 78px; left: -16px; top: -16px; transform: rotate(-24deg); z-index: 4; }
+.mascot-satellite { position: absolute; display: block; width: 7px; height: 7px; offset-path: ellipse(35px 14px at 39px 39px); offset-rotate: 0deg; border-radius: 50%; background: radial-gradient(circle at 28% 25%, #f1f1dd, rgba(var(--planet-rgb), .9) 36%, #36453e 78%); box-shadow: 0 0 6px rgba(var(--planet-rgb), .3); animation: mascot-satellite-orbit 9s linear infinite; }
+.mascot-satellite.satellite-two { width: 4px; height: 4px; offset-path: ellipse(27px 25px at 39px 39px); animation-duration: 14s; animation-delay: -7s; opacity: .75; }
+.mascot-planet-carrier.feed .mascot-satellite { animation-direction: reverse; animation-delay: -3s; }
+.mascot-planet-carrier.feed .satellite-two { animation-delay: -9s; }
+.mascot-planet-globe { position: relative; display: block; width: 34px; height: 34px; border-radius: 50%; overflow: hidden; isolation: isolate; background: radial-gradient(circle at 28% 23%, #e4f0b4, #9bb974 35%, #486244 70%, #1b3027); box-shadow: inset -5px -4px 8px #08170d88, inset 1px 1px 2px #eefbc793, 0 0 19px #b3d78720, 0 4px 8px #0007; }
+.mascot-planet-globe::after { content: ''; position: absolute; inset: 0; z-index: 2; border-radius: 50%; background: radial-gradient(ellipse at 28% 22%, #f3ffd665, transparent 48%), linear-gradient(120deg, transparent 35%, #07150b60); box-shadow: inset 0 0 2px #efffdc77; }
+.mascot-planet-map { position: absolute; inset: -20% -80%; background: radial-gradient(ellipse at 18% 35%, #365e3f75 0 9%, transparent 10%), radial-gradient(ellipse at 48% 53%, #45613e88 0 12%, transparent 13%), radial-gradient(ellipse at 77% 20%, #e8ecb052 0 8%, transparent 9%), repeating-linear-gradient(164deg, transparent 0 6px, #eff7c82d 7px 9px, transparent 10px 17px); background-size: 65px 44px; animation: mascot-planet-surface 8s linear infinite; }
+.mascot-planet-meridians { position: absolute; inset: -1px; transform-style: preserve-3d; animation: mascot-planet-spin 11s linear infinite; }
+.mascot-planet-meridians i { position: absolute; inset: 1px 5px; border: 1px solid #e3f5c43b; border-radius: 50%; }
+.mascot-planet-meridians i:nth-child(2) { transform: rotateY(60deg); }
+.mascot-planet-meridians i:nth-child(3) { transform: rotateY(120deg); }
+.mascot-planet-label { position: absolute; top: 90px; left: 50%; transform: translateX(calc(-50% + var(--label-shift, 0px))); display: inline-flex; align-items: center; gap: 5px; white-space: nowrap; border: 1px solid #445736; border-radius: 15px; padding: 5px 9px; background: #111a10eb; color: #c9dcb4; font-size: 10px; font-weight: 400; letter-spacing: .5px; box-shadow: 0 3px 9px #0005; }
+.mascot-planet-label > span { font-size: 10px; color: #91ab74; }
+.mascot-planet-carrier.feed .mascot-planet-globe { width: 39px; height: 39px; background: radial-gradient(circle at 28% 23%, #c4e8e0, #7ba9ad 35%, #344e63 70%, #162730); box-shadow: inset -6px -5px 8px #07151e99, inset 1px 1px 2px #e0fff08c, 0 0 19px #88c8cf25, 0 4px 8px #0007; }
+.mascot-planet-carrier.feed .mascot-planet-map { background: repeating-linear-gradient(168deg, #b0d7d146 0 3px, transparent 4px 8px, #538aab62 9px 14px, transparent 15px 21px); background-size: 58px 49px; animation-duration: 10s; }
+.mascot-planet-carrier.feed .mascot-planet-label { border-color: #3a5154; color: #b8d9d6; background: #0e191bed; }
+.mascot-planet-carrier.classroom .mascot-planet-globe { width: 36px; height: 36px; background: radial-gradient(circle at 28% 23%, #f3dfb9, #bd9464 36%, #79583e 70%, #382b25); box-shadow: inset -5px -4px 8px #21140899, inset 1px 1px 2px #fff1cf8c, 0 0 19px #dfb17b25, 0 4px 8px #0007; }
+.mascot-planet-carrier.classroom .mascot-planet-map { background: radial-gradient(ellipse at 26% 35%, #6a46396b 0 10%, transparent 12%), radial-gradient(ellipse at 70% 62%, #f0d0a567 0 8%, transparent 10%), repeating-linear-gradient(158deg, transparent 0 6px, #f0d8b329 7px 10px, transparent 11px 19px); background-size: 67px 49px; animation-duration: 12s; }
+.mascot-planet-carrier.classroom .mascot-planet-label { border-color: #66523c; color: #e3cda7; background: #20190feb; }
+.mascot-planet-carrier.classroom .mascot-planet-label > span { color: #b99b70; }
+.mascot-planet-button:hover .mascot-planet-globe, .mascot-planet-button:focus-visible .mascot-planet-globe { filter: brightness(1.15); }
+.mascot-planet-button:focus-visible { outline: 1px solid #d0ed9f; outline-offset: 4px; }
+.focused-home .hero-art.mascot-hero-art { margin-bottom: 80px; }
+@keyframes mascot-planet-surface { from { background-position: 0 0; } to { background-position: -65px 0; } }
+@keyframes mascot-planet-spin { from { transform: rotate(-14deg) rotateY(0); } to { transform: rotate(-14deg) rotateY(360deg); } }
+@keyframes mascot-halo-breathe { 0%, 100% { opacity: .6; transform: scale(.94); } 50% { opacity: 1; transform: scale(1.06); } }
+@keyframes mascot-satellite-orbit { from { offset-distance: 0%; } to { offset-distance: 100%; } }
+
+@keyframes mascot-float {
+  0%, 100% { transform: translate3d(0, 3px, 0) rotate(-1.5deg); }
+  24% { transform: translate3d(-2px, -6px, 0) rotate(.5deg); }
+  41% { transform: translate3d(1px, -1px, 0) rotate(1deg); }
+  48%, 53% { transform: translate3d(2px, -4px, 0) rotate(3deg); }
+  68% { transform: translate3d(-1px, -8px, 0) rotate(-1deg); }
+  82% { transform: translate3d(-2px, 0, 0) rotate(-2deg); }
+}
+@keyframes mascot-shadow-breathe {
+  0%, 100% { transform: scaleX(1); opacity: .8; }
+  24%, 68% { transform: scaleX(.86); opacity: .45; }
+  48% { transform: scaleX(.94); opacity: .62; }
+}
+@keyframes mascot-look {
+  0%, 16%, 40%, 61%, 80%, 100% { transform: translate(0, 0); }
+  24%, 32% { transform: translate(-8px, 1px); }
+  45%, 54% { transform: translate(5px, -3px); }
+  66%, 73% { transform: translate(0, -3px); }
+}
+@keyframes mascot-blink-left {
+  0%, 9%, 12%, 63%, 77%, 86%, 89%, 100% { transform: scaleY(1); opacity: 1; }
+  10.5%, 87.5% { transform: scaleY(.08); opacity: 1; }
+  65%, 75% { transform: scaleY(.25); opacity: 0; }
+}
+@keyframes mascot-blink-right {
+  0%, 9%, 12%, 42%, 57%, 63%, 77%, 86%, 89%, 100% { transform: scaleY(1); opacity: 1; }
+  10.5%, 87.5% { transform: scaleY(.08); opacity: 1; }
+  45%, 54%, 65%, 75% { transform: scaleY(.2); opacity: 0; }
+}
+@keyframes mascot-wink-show {
+  0%, 42%, 57%, 100% { opacity: 0; }
+  45%, 54% { opacity: 1; }
+}
+@keyframes mascot-happy-show {
+  0%, 63%, 77%, 100% { opacity: 0; }
+  66%, 74% { opacity: 1; }
+}
+@keyframes mascot-smile-change {
+  0%, 37%, 60%, 80%, 100% { opacity: 1; transform: scale(1, 1); }
+  44%, 55% { opacity: 1; transform: scale(1.06, 1.22); }
+  65%, 75% { opacity: 0; transform: scale(1.05, 1.15); }
+}
+@keyframes mascot-grin-show {
+  0%, 62%, 79%, 100% { opacity: 0; }
+  66%, 74% { opacity: 1; }
+}
+@keyframes mascot-orbit-breathe { 0%, 100% { opacity: .32; } 50% { opacity: .68; } }
+@keyframes mascot-orbit-drift { from { stroke-dashoffset: 0; } to { stroke-dashoffset: -89.5; } }
+@keyframes mascot-star-breathe { 0%, 100% { opacity: .14; transform: scale(.8); } 50% { opacity: .72; transform: scale(1.1); } }
+
+@media (max-width: 700px) {
+  .mascot-character-frame { width: 194.67px; height: 194.67px; }
+  .mascot-orbit { width: 420px; max-width: 122%; height: 245px; transform: translate(-50%, -43%); }
+  .mascot-floor-glow { width: 240px; bottom: 5px; }
+  .mascot-shadow { bottom: 12px; }
+  .mascot-planet-label { font-size: 9px; padding: 4px 7px; top: 84px; gap: 3px; }
+  .mascot-planet-carrier.assistant .mascot-planet-label { top: -23px; }
+  .mascot-planet-globe { width: 29px; height: 29px; }
+  .mascot-planet-carrier.feed .mascot-planet-globe { width: 33px; height: 33px; }
+  .mascot-planet-carrier.classroom .mascot-planet-globe { width: 31px; height: 31px; }
+  .focused-home .hero-art.mascot-hero-art { margin-bottom: 62px; }
+}
+@media (max-width: 390px) { .mascot-character-frame { width: 184px; height: 184px; } }
+@media (prefers-reduced-motion: reduce) {
+  .learning-mascot *, .learning-mascot *::before, .learning-mascot *::after { animation: none !important; will-change: auto; }
+  .mascot-character { transform: none; }
+  .mascot-wink, .mascot-happy-eyes, .mascot-grin { opacity: 0; }
+  .mascot-eye, .mascot-smile { opacity: 1; transform: none; }
+  .mascot-gaze { transform: none; }
+}

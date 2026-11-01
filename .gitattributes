@@ -1,0 +1,15 @@
+* text=auto
+*.sh text eol=lf
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.png binary
+*.jpg binary
+*.webp binary
+*.mp4 binary
+*.bin binary
+*.ttf binary
+*.woff2 binary
+# These files have byte-level provenance manifests. Preserve their original EOLs.
+server/personas/** -text
+server/skills/** -text
+device/firmware/** -text

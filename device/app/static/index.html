@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="把课堂录音与课件变成优先覆盖薄弱知识点的学习信息流">
+  <title>知流 · 刷懂你还没懂的知识</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="知流首页"><span class="brand-mark">知</span><span>知流</span></a>
+    <span class="topbar-tagline">Stop reading. Start scrolling.</span>
+    <span id="connection-status" class="connection-status">正在连接</span>
+  </header>
+  <div class="app-shell">
+    <aside class="left-sidebar">
+      <nav aria-label="主导航">
+        <a class="nav-item active" href="#feed"><span class="nav-icon">⌂</span>学习信息流</a>
+        <button class="nav-item" id="weak-nav"><span class="nav-icon">◎</span>我的薄弱点</button>
+        <button class="nav-item" id="courses-nav"><span class="nav-icon">▤</span>录音与转写</button>
+        <button class="nav-item" id="device-nav"><span class="nav-icon">⇄</span>设备导入</button>
+      </nav>
+      <div class="device-card">
+        <span class="eyebrow">T5 采集器</span>
+        <strong>TF 读卡器导入</strong>
+        <p>充电宝供电录音，保存后通过读卡器导入电脑并转写。</p>
+      </div>
+    </aside>
+    <main id="feed" class="main-content">
+      <section class="feed-heading">
+        <div>
+          <span class="eyebrow">为你优先整理</span>
+          <h1>继续刷，直到真正弄懂</h1>
+          <p>主帖看概览，展开回复深挖细节。</p>
+        </div>
+        <button id="demo-button" class="secondary-button" type="button">载入演示</button>
+      </section>
+      <section class="course-bar" aria-label="课程选择">
+        <label for="course-select">当前课程</label>
+        <select id="course-select"><option value="">正在载入课程…</option></select>
+        <span id="mark-count" class="mark-count"></span>
+      </section>
+      <div id="notice" class="notice" role="status" hidden></div>
+      <section id="feed-list" class="feed-list" aria-live="polite"></section>
+      <section id="empty-state" class="empty-state" hidden>
+        <div class="empty-illustration" aria-hidden="true"><span>?</span><i></i><i></i><i></i></div>
+        <h2>你的第一条学习信息流</h2>
+        <p>导入课堂录音和课件后，知流会把你标记过的薄弱知识点排在前面。</p>
+        <button id="empty-demo-button" class="primary-button" type="button">先用演示课程体验</button>
+      </section>
+    </main>
+    <aside class="right-sidebar">
+      <section class="insight-card">
+        <span class="eyebrow">本节课学习策略</span>
+        <h2>先补上你标记的空白</h2>
+        <ol class="strategy-list">
+          <li><span>1</span>刷主帖，快速回忆</li>
+          <li><span>2</span>不懂就展开详解</li>
+          <li><span>3</span>判断误区，主动验证</li>
+          <li><span>4</span>反馈掌握程度</li>
+        </ol>
+      </section>
+      <p class="source-note">知识内容应保留课件来源。误区帖需先判断，再显示答案与解析。</p>
+    </aside>
+  </div>
+  <nav class="mobile-nav" aria-label="移动端导航">
+    <a class="active" href="#feed">首页</a><button id="mobile-weak">薄弱点</button><button id="mobile-device">导入</button>
+  </nav>
+  <dialog id="device-dialog" class="device-dialog">
+    <div class="dialog-heading"><div><span class="eyebrow">TF 读卡器工作流</span><h2>导入课堂录音</h2></div><button id="close-dialog" class="dialog-close" type="button" aria-label="关闭">×</button></div>
+    <section class="card-reader-guide">
+      <h3>充电宝录音 → 读卡器转写</h3>
+      <ol><li>开发板显示“保存成功”后，断电取出 TF 卡。</li><li>用读卡器连接电脑，双击项目里的 <strong>读卡器导入并转写.bat</strong>。</li><li>选择 <code>courses</code> 或单节 <code>course_xxx</code> 文件夹，选中课程后导入。</li></ol>
+      <p>完成后自动打开录音播放器、完整转写和学习流。重复导入会保留原课程与反馈。</p>
+      <a class="reader-guide-link" href="/static/card_reader_guide.html" target="_blank" rel="noopener">查看读卡器详细操作</a>
+    </section>
+    <details class="serial-alternative"><summary>也可以通过 USB 串口导入</summary>
+    <p class="dialog-intro">开发板停止录音并保存成功后连接电脑，输入课程编号与串口。</p>
+    <form id="serial-form" class="serial-form">
+      <label>课程编号<input id="import-course-id" value="course_001" pattern="[A-Za-z0-9_.-]+" required></label>
+      <label>串口<input id="import-port" value="COM5" required></label>
+      <button id="import-submit" class="primary-button" type="submit">开始有线导入</button>
+    </form>
+    </details>
+    <div id="import-progress" class="import-progress" role="status"></div>
+    <section id="post-import" class="post-import" hidden>
+      <h3>课程已导入，继续处理</h3>
+      <label class="file-field">选择对应课件（PDF / PPTX / TXT）<input id="document-file" type="file" accept=".pdf,.pptx,.txt,.md"></label>
+      <div class="process-actions">
+        <button id="upload-document" class="secondary-button" type="button">1. 上传并索引课件</button>
+        <button id="transcribe-course" class="secondary-button" type="button">2. 语音识别</button>
+        <button id="generate-feed" class="primary-button" type="button">3. 生成学习流</button>
+      </div>
+    </section>
+  </dialog>
+  <script src="/static/app.js" defer></script>
+</body>
+</html>

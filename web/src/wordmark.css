@@ -1,0 +1,6 @@
+.synkore-wordmark.focused-wordmark { display: inline-flex; align-items: baseline; flex: 0 0 auto; gap: 4px; color: #eff0df; letter-spacing: -.8px; line-height: 1; }
+.synkore-wordmark .synkore-lettering { display: inline-flex; align-items: baseline; font-family: 'Instrument Serif', Georgia, serif; font-weight: 400; font-style: italic; font-size: 36px; letter-spacing: -.9px; }
+.synkore-wordmark .synkore-lettering img { width: 25px; height: 27px; object-fit: contain; align-self: center; margin: 0 -1px 0 0; transform: translateY(3px) rotate(-9deg); }
+.synkore-wordmark .synkore-chinese { font-family: 'Noto Serif SC', 'Songti SC', SimSun, serif; font-size: 20px; font-style: italic; font-weight: 400; letter-spacing: -1.2px; }
+.synkore-wordmark:hover { color: #d6edbb; }
+@media(max-width:700px) { .synkore-wordmark .synkore-lettering { font-size: 31px; } .synkore-wordmark .synkore-lettering img { width: 22px; height: 24px; } .synkore-wordmark .synkore-chinese { font-size: 17px; } }

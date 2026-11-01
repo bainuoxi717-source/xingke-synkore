@@ -1,0 +1,27 @@
+{
+  "url": "https://github.com/BigPengSays/bigpeng-hot-gzh",
+  "retrievedAt": "2026-11-01",
+  "license": "MIT",
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "ff2abb2bab84a85cce4b8a6e671a248f1fa176f04d45c7f5a31f5fe0bec87353"
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "320a374b3f5d23f6126865f74f2e68837a9771558a44b0c5bbdaf10a49c2100b"
+    },
+    {
+      "path": "references/qa-checklist.md",
+      "sha256": "e22ec541ee97edca0f7603e08ec6f18bdc57f3bef4d176ab68f197af2f29166c"
+    },
+    {
+      "path": "references/title-formulas.md",
+      "sha256": "04cd8adae5f33f496a085df39af578546f7ea6c5152297b28b7c0b8b495d87c2"
+    },
+    {
+      "path": "references/topic-templates.md",
+      "sha256": "1d5ad6cee0711ca03dae9dc0b2de9afbcbd76c2f04453477fa03a25685c749cd"
+    }
+  ]
+}

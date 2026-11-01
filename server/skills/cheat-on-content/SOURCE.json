@@ -1,0 +1,494 @@
+{
+  "url": "https://github.com/XBuilderLAB/cheat-on-content",
+  "commit": "97aec3e3dfcc8ba8c080c641432832fa39d12957",
+  "retrievedAt": "2026-11-01",
+  "license": "MIT",
+  "scope": "完整原仓库归档，应用只采用已审读的写作与反馈规则",
+  "changes": "原始文件保留；ADAPTER.md 为醒课新增的图文学习适配，未执行原仓库脚本或连接社交账户。",
+  "files": [
+    {
+      "path": ".github/workflows/star-history.yml",
+      "sha256": "6e08801a1d17b5f069378f8de4b6e7d918aef0629088d8476c3185a0b315da21"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "6bfe893658992fdfc187f1f2b423da1a8734f40f4546028940e9bb37ca9aaab3"
+    },
+    {
+      "path": "adapters/perf-data/bilibili-stat/.gitattributes",
+      "sha256": "ad83196a57e0c674efddfa0711adacef647a4f181a528898798f7e81edcab483"
+    },
+    {
+      "path": "adapters/perf-data/bilibili-stat/crawler.py",
+      "sha256": "f6f0e2210f9f932cee5aad5a12e27f65e0434f9c8601e3a6f210f46a64369286"
+    },
+    {
+      "path": "adapters/perf-data/bilibili-stat/paths.py",
+      "sha256": "5f75115ca9b152ed9e23c886a4a4aee041cd17d2d65ca5f87cb99b8c0ad47280"
+    },
+    {
+      "path": "adapters/perf-data/bilibili-stat/README.md",
+      "sha256": "97c4ff6c373d065a169ed9b44b19d99d6ca71a330edcaca7e99406b6d3c3d0e3"
+    },
+    {
+      "path": "adapters/perf-data/bilibili-stat/renderer.py",
+      "sha256": "cd6969d452179c55068c7e2cd90a48be7ad8af950a8ab057f527576d468b371b"
+    },
+    {
+      "path": "adapters/perf-data/bilibili-stat/requirements.txt",
+      "sha256": "5e001466b9dac8aea97b90a9fe6a13d696c875ceca9aae7a5722c2f9665e2404"
+    },
+    {
+      "path": "adapters/perf-data/bilibili-stat/review.py",
+      "sha256": "56bba0bb927044e35e3e4152523d07b712bcf482373aecfa8e0153a21bae80ad"
+    },
+    {
+      "path": "adapters/perf-data/bilibili-stat/run.sh",
+      "sha256": "6f99fd65622576e0b6774f0254ef138a551435bc22ef7565576ea58e7461adb3"
+    },
+    {
+      "path": "adapters/perf-data/douyin-session/crawler.py",
+      "sha256": "e76a0e0f1af6773f7f81f143f8538081f548f684c70e4dbb1dd665da4e8c4988"
+    },
+    {
+      "path": "adapters/perf-data/douyin-session/paths.py",
+      "sha256": "3ac595cb2689040927996d9b8728a81842d5089c3e0a8291c930b1432de0d7f6"
+    },
+    {
+      "path": "adapters/perf-data/douyin-session/README.md",
+      "sha256": "f006f5afde267d4ce6e44dfff6fc367486bc4a4f2e69cbb6e7a727e134d9c9d4"
+    },
+    {
+      "path": "adapters/perf-data/douyin-session/renderer.py",
+      "sha256": "2efcbae137474edd86f75cf2005a8531851f50007635b1d857c55d5c1e99c1f5"
+    },
+    {
+      "path": "adapters/perf-data/douyin-session/requirements.txt",
+      "sha256": "e0bdf5ddf23c7ba90da192c9c22293895d039509a7d54742d705225f45dc8367"
+    },
+    {
+      "path": "adapters/perf-data/douyin-session/review.py",
+      "sha256": "8e8e69b592386fbe248aa568e03518b3cfed448256daa47561b681610dabffe8"
+    },
+    {
+      "path": "adapters/perf-data/douyin-session/run.sh",
+      "sha256": "26545a4fdebe8720159cf4b502959637a24f72ba7135434ffac8426b1896c3d3"
+    },
+    {
+      "path": "adapters/perf-data/linkedin-session/.gitattributes",
+      "sha256": "ad83196a57e0c674efddfa0711adacef647a4f181a528898798f7e81edcab483"
+    },
+    {
+      "path": "adapters/perf-data/linkedin-session/crawler.py",
+      "sha256": "beee19b2180bbf198c5edb637d323834904f2226002df48e242916f26b983eb1"
+    },
+    {
+      "path": "adapters/perf-data/linkedin-session/extract.py",
+      "sha256": "9ec29ae28fbbdcee3fbf4a06f6b06391581bfdb18c069a28d6ae8c93ab3f5b54"
+    },
+    {
+      "path": "adapters/perf-data/linkedin-session/paths.py",
+      "sha256": "f44ea00376495e97b51d78530adcba6f55b5455cc34a0dad2d31fcf00b7540c5"
+    },
+    {
+      "path": "adapters/perf-data/linkedin-session/README.md",
+      "sha256": "dc46156fd856c37f19fdc9df6ce9507e6b1c1222354f425048c913041a3b92bf"
+    },
+    {
+      "path": "adapters/perf-data/linkedin-session/renderer.py",
+      "sha256": "cde1a6560e5acdd26be81a2e31bb9c4b50f997e270f8c47c06c4f03d13c0b8e4"
+    },
+    {
+      "path": "adapters/perf-data/linkedin-session/requirements.txt",
+      "sha256": "e0bdf5ddf23c7ba90da192c9c22293895d039509a7d54742d705225f45dc8367"
+    },
+    {
+      "path": "adapters/perf-data/linkedin-session/review.py",
+      "sha256": "5f9ee435200dff06830a9a3137123df09d90ed916773a80ed121e6e106e4e527"
+    },
+    {
+      "path": "adapters/perf-data/linkedin-session/run.sh",
+      "sha256": "c89bd59a0e03c85f1482ba90aedea5ce40aaecda2f2e9a682baad6078038c8a2"
+    },
+    {
+      "path": "adapters/perf-data/linkedin-session/test_extract.py",
+      "sha256": "76446975aaf29a37a1ccaaf065ef9e860acd6490159846d401841e1f3d461318"
+    },
+    {
+      "path": "adapters/perf-data/wechat-channels/.gitattributes",
+      "sha256": "ad83196a57e0c674efddfa0711adacef647a4f181a528898798f7e81edcab483"
+    },
+    {
+      "path": "adapters/perf-data/wechat-channels/crawler.py",
+      "sha256": "7b9234d7eee888f90a9d93e6c111566307a5ee9468f166cba7a51358fd6f9caf"
+    },
+    {
+      "path": "adapters/perf-data/wechat-channels/paths.py",
+      "sha256": "dda944c315dd2611fac08e8503746b74b19a960bd92a48e90fb383688465d7db"
+    },
+    {
+      "path": "adapters/perf-data/wechat-channels/README.md",
+      "sha256": "ba9ecb9d81903fa239ddae71f2c7a59530427618c8ef65b470c549bf4c63a1aa"
+    },
+    {
+      "path": "adapters/perf-data/wechat-channels/renderer.py",
+      "sha256": "c915e6cf8080c607c825495efa0bb7e39c1592681fa0351a59a2a2d8ba2a0d60"
+    },
+    {
+      "path": "adapters/perf-data/wechat-channels/requirements.txt",
+      "sha256": "e0bdf5ddf23c7ba90da192c9c22293895d039509a7d54742d705225f45dc8367"
+    },
+    {
+      "path": "adapters/perf-data/wechat-channels/review.py",
+      "sha256": "189c41554e3e0bba135b90d612e3aa8354044a1749ea33ee862035edeec8a77a"
+    },
+    {
+      "path": "adapters/perf-data/wechat-channels/run.sh",
+      "sha256": "52aa1aaea250b9480c17d706aed9710ba22be026581a22719a137fb79f6d5660"
+    },
+    {
+      "path": "adapters/perf-data/wechat-channels/test_adapter.py",
+      "sha256": "5dec21fd1749b95da2125d4f6f36ee7cca24b984cb8a5cfab4c25c9d9bd07c2e"
+    },
+    {
+      "path": "adapters/perf-data/wechat-channels/test_run_contract.sh",
+      "sha256": "c49360e6ea7a516abc749099342e698a321cf9156639a890432593192089aa15"
+    },
+    {
+      "path": "adapters/perf-data/xhs-explore/crawler.py",
+      "sha256": "5a311379dc1909f4c1db6d3f3c72d37d221966d9d0bf0795f12da44e3ce19250"
+    },
+    {
+      "path": "adapters/perf-data/xhs-explore/paths.py",
+      "sha256": "20da5116dc7cfe73cf6ad5aa1225c1f1d265a8d3c47abd033c125350dee31e23"
+    },
+    {
+      "path": "adapters/perf-data/xhs-explore/README.md",
+      "sha256": "9009cdfec5aba7f9396cfa39d4634f4a3edd7ee4fc5494cdf9b96a9ad6977510"
+    },
+    {
+      "path": "adapters/perf-data/xhs-explore/renderer.py",
+      "sha256": "88fbe1182fcfbfcda4062e9aaa2bb9e99967e3a2cac46b497f0c67c1cbcbd148"
+    },
+    {
+      "path": "adapters/perf-data/xhs-explore/requirements.txt",
+      "sha256": "d51f836c4683ea64264385cd1d11042add44930d9f745e610845185d4696f285"
+    },
+    {
+      "path": "adapters/perf-data/xhs-explore/review.py",
+      "sha256": "495f3182ccfdb221a47388529788809b2dcec7b75924526d4888f567905f1b36"
+    },
+    {
+      "path": "adapters/perf-data/xhs-explore/run.sh",
+      "sha256": "5a3e4cc4e169cfc414bf22d25edb5383c98b24b3edbf0e087b98c8dce6a86690"
+    },
+    {
+      "path": "adapters/script-extraction/whisper/README.md",
+      "sha256": "563b477f46e8bb8713908fd9d925d0c4d13eca652a86e007a951f8b887853a87"
+    },
+    {
+      "path": "adapters/script-extraction/whisper/run.sh",
+      "sha256": "e65307d18cc7e692a2a1c3d59221df3161c6100dc7a79d479ab4c4954b58b2f3"
+    },
+    {
+      "path": "adapters/trend-sources/aihot.md",
+      "sha256": "1edb4fc41fd536238134425a0ce37fc708c0cbbd4b563c62896ccd7893d121f5"
+    },
+    {
+      "path": "adapters/trend-sources/trendradar-mcp.md",
+      "sha256": "8d571aabfc4db1e0fd359a3dcf4861ccbb085a188e65ec19165b4bb2485d3724"
+    },
+    {
+      "path": "adapters/trend-sources/weibo-hot.md",
+      "sha256": "a179041ce5dbbc2349d004f839fae7af562e3ff767cb5027aa8236932b96e0ed"
+    },
+    {
+      "path": "adapters/trend-sources/zhihu-hot.md",
+      "sha256": "4c198fbe63ae120d256f09a3bf49d43f0e675044211cfb01384c4cbcfb48e72a"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "sha256": "a77b8a0936fc7e4a0d92aa0bdba0f9a5842f9f0e4762419851eff524d4d0ce9b"
+    },
+    {
+      "path": "docs/guancha-no1.svg",
+      "sha256": "c800ca27b8404b3b37bc3a1dce1a7286bc2ad2895f23159ad08947a73381a989"
+    },
+    {
+      "path": "docs/logo.svg",
+      "sha256": "e6ab67fdaf018c9b24b95e55a66472f5666a679c59a69290bd628b4f47df16cb"
+    },
+    {
+      "path": "docs/README_CN.md",
+      "sha256": "efd9c97e0aa782b1928ccdce1e11f59f04898bb8734e05de1c41e8ac1268260e"
+    },
+    {
+      "path": "docs/star-history.svg",
+      "sha256": "5477f7399b8a7e4070291fc7ad8a9262482a3a90ad5b48a5e85ae3b380770406"
+    },
+    {
+      "path": "examples/script_patterns.example.md",
+      "sha256": "d75227cfbec4f73eab591a8c869c9d52050c13f8e64db2c9c0fd4df4a8679abd"
+    },
+    {
+      "path": "hooks/log-event.sh",
+      "sha256": "56fddbf3d77bd6427cf1e5c974fade7ec3786721d1ff35cd4a866555ebd06ad2"
+    },
+    {
+      "path": "hooks/meta-logging.json",
+      "sha256": "2db9dcf8048fe58232c00237c61c05a1c62ab294d3d5650a1d88c91505681412"
+    },
+    {
+      "path": "hooks/prediction-immutability.json",
+      "sha256": "920d2b4a75fa43dbfc12126e3dd03f5b52beb6475447e00c8218a1fe9060765b"
+    },
+    {
+      "path": "hooks/prediction-immutability.sh",
+      "sha256": "4e6d941d6a659f50ab93c4cf82cef80bf1f1a71874d6e2e1aea24c6e93a44004"
+    },
+    {
+      "path": "hooks/session-start.json",
+      "sha256": "3be299c086b63308090d3650425644986a8615fe9772d9704c5c1eb224a318cf"
+    },
+    {
+      "path": "hooks/session-start.sh",
+      "sha256": "2e5bd13572c5841053123e8237c0c3a5ad72068274fdfcf5e25065300e17de30"
+    },
+    {
+      "path": "install.sh",
+      "sha256": "f21ac3266cb6a4a60f1b91648a46175ad7750500a85c532de1dc1e00af0a6e9a"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "f50148c04443b36bdca533063631991086547af0984d692fbed247cb57e154cc"
+    },
+    {
+      "path": "migrations/1.0-to-1.1.md",
+      "sha256": "c19eb651f19bb713469fa6814034ae08b2cb1497ce80ec0a7c9a43bd4bc91628"
+    },
+    {
+      "path": "migrations/1.1-to-1.2.md",
+      "sha256": "aee8e1cf335cebaa64435e7b0d17d7bb82af782b29dae8c2fb9e9ed8dfdf875c"
+    },
+    {
+      "path": "migrations/1.2-to-1.3.md",
+      "sha256": "421ec4019723618816cac6a6c69eae31f4d0df1543fc8804aa1da67ca537b672"
+    },
+    {
+      "path": "migrations/1.3-to-1.4.md",
+      "sha256": "d98ca64d00c91371062638d8e8bc45ff28a5836bc40c64b3633b71139a9d6c12"
+    },
+    {
+      "path": "migrations/registry.md",
+      "sha256": "0944d8ba49757936a11dda8196939cb56abd70947df58661ece35ecf678ddd20"
+    },
+    {
+      "path": "README.md",
+      "sha256": "eb1186a346a9db9de1ce62dfed5ba66eaa9f6a7f4e243ae7064ebe9cf523ce5e"
+    },
+    {
+      "path": "shared-references/blind-prediction-protocol.md",
+      "sha256": "a07f9fcda280fe76a751a13b3afc9702e486fdb94f679c9f6665095017acf6ac"
+    },
+    {
+      "path": "shared-references/bump-validation-protocol.md",
+      "sha256": "6b7638f55ec67705f705299a65f79e3c7a1e5822bcddb7209179bbbb2c99fefd"
+    },
+    {
+      "path": "shared-references/cadence-protocol.md",
+      "sha256": "6a9076ec1e08d2e25261d559b15e147a8f17527e278ece04bd68b23e8b4dc28e"
+    },
+    {
+      "path": "shared-references/candidate-schema.md",
+      "sha256": "9efe239a5cc32f21dcbab9325d37dfaf3f5bb65bd7c98a876d1ca8bb495e3341"
+    },
+    {
+      "path": "shared-references/data-source-routing.md",
+      "sha256": "75e7bcc92df3e11d4b9046ddcfc8f4d0ca3ccba2d1c0d6813e24fbf8876e3fc4"
+    },
+    {
+      "path": "shared-references/migration-protocol.md",
+      "sha256": "07eca666e8d7249dba14c175a8e8b61d2d1571f65eb50fac208af2a4982aa8c0"
+    },
+    {
+      "path": "shared-references/observation-lifecycle.md",
+      "sha256": "0fe822b6bd52bafb6d56afe8465d1744d35127f0010f5c53e11c45bf9e1ff560"
+    },
+    {
+      "path": "shared-references/prediction-anatomy.md",
+      "sha256": "34cf32cd165aad15cb4a3b20a5025958da8259539f1bd66c4d52b016cd61a468"
+    },
+    {
+      "path": "shared-references/state-management.md",
+      "sha256": "8439ea64c8e5e036f31d0f7a55e786824f425effe67733fd784d999bab6cf501"
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "0ba89d724d2fb4f054a4576b61d9cca333d81998f5fc90efcc22913a9c0c227d"
+    },
+    {
+      "path": "skills/cheat-bump/SKILL.md",
+      "sha256": "037bace95a9d6f7764ed3105eec4cb9d633df0a13ca61d1325054878c30874cb"
+    },
+    {
+      "path": "skills/cheat-init/SKILL.md",
+      "sha256": "e9a32b6bd13030b2dac8128c74dcfc84560aeee5ae25a1c718be983633100afc"
+    },
+    {
+      "path": "skills/cheat-learn-from/SKILL.md",
+      "sha256": "ca9aa5d7b8f1aba5e89100694100f56f4e3bdc0daacf8592c703039567374db0"
+    },
+    {
+      "path": "skills/cheat-migrate/SKILL.md",
+      "sha256": "da1c296cfe9d3355f2fb625f15fc24c425c5d03e9f595612d59b29319c058be1"
+    },
+    {
+      "path": "skills/cheat-persona/SKILL.md",
+      "sha256": "937156272f9a58189a31cacf7da0676d838fd733de741c4b865c8eef683071d3"
+    },
+    {
+      "path": "skills/cheat-predict/SKILL.md",
+      "sha256": "9e1096e853bb1eb3c147b70fee7c03692c5ac40683bd8b6e74d297b61c1c952f"
+    },
+    {
+      "path": "skills/cheat-publish/SKILL.md",
+      "sha256": "ba810234e03f8b3842798a59abebb26d5359846cc3e1be0ad7cee00865b219ff"
+    },
+    {
+      "path": "skills/cheat-recommend/SKILL.md",
+      "sha256": "b820143508b6484866e61b615fd5e20ec6723cf3f26aff09f7592c8c2125aaf1"
+    },
+    {
+      "path": "skills/cheat-retro/SKILL.md",
+      "sha256": "e4857a971fac0e1d6e290f1de46692d97469e664616993df2263cfdafea3fd60"
+    },
+    {
+      "path": "skills/cheat-score/SKILL.md",
+      "sha256": "6efb9ce473623a5788a2e4900e57a6f7f26b580f49ff738a706e396dfa3c550a"
+    },
+    {
+      "path": "skills/cheat-score-blind/SKILL.md",
+      "sha256": "0ec332b8b6e7ca5e966b27fe0104c02ae529ab46da54429e457493f51e64d3f7"
+    },
+    {
+      "path": "skills/cheat-seed/SKILL.md",
+      "sha256": "afd7eeac337a3d023f20ed01c7f87f32e54432372f71244a3ae02d6de2273ec4"
+    },
+    {
+      "path": "skills/cheat-shoot/SKILL.md",
+      "sha256": "42fda83dc725ce7465fa3e75faa87143d501a6953650681667766c2fe8312aad"
+    },
+    {
+      "path": "skills/cheat-status/SKILL.md",
+      "sha256": "b86f6ff45fe34f88db2cd0b84f9ba060bea27dfa5e9eb94aad99beb927ca1ba3"
+    },
+    {
+      "path": "skills/cheat-trends/SKILL.md",
+      "sha256": "5f4e11adfcd4eada43d4bf0a4fb2399426e20c161ddcb4ac569f938805d36c78"
+    },
+    {
+      "path": "starter-rubrics/long-essay-zero.md",
+      "sha256": "4e463bd8c4129a3b96a8ecd0a71ed0fe3290c1685b1025e3e3b99471773d0de4"
+    },
+    {
+      "path": "starter-rubrics/opinion-video-zero.md",
+      "sha256": "9237b5241aeacf849e03ecbc3cbf2017d5d3f18fcd5509cdab9fb4e958f61401"
+    },
+    {
+      "path": "starter-rubrics/opinion-video.md",
+      "sha256": "7ea4072db7bff94898ce2c96164d8958de5892b19246d4190d548f42ac82fc70"
+    },
+    {
+      "path": "starter-rubrics/other-zero.md",
+      "sha256": "624f808f5e79dc7d29ce9d16520d244d7c053c490c6ac26c3ddc1544d942cc61"
+    },
+    {
+      "path": "starter-rubrics/podcast-zero.md",
+      "sha256": "9a6f3b5be89d151369c32a5d572e24606a52677f1a012f3780e6eb45f1bc7dda"
+    },
+    {
+      "path": "starter-rubrics/short-text-zero.md",
+      "sha256": "8137bd678dc81d058891994a8ae72dc1112c477beb5a7b83167bb0fb4ec3aec9"
+    },
+    {
+      "path": "starter-rubrics/tutorial-builder-zero.md",
+      "sha256": "f148113920a3c5611f8e06f8c5a96f7274c8066de2b1697c88518d8c04b6b6f3"
+    },
+    {
+      "path": "templates/audience.template.md",
+      "sha256": "3a0579af8968dd1a37fd2bf97ceec1b018cdec1540e7c13447c3e486a35f0889"
+    },
+    {
+      "path": "templates/benchmark.template.md",
+      "sha256": "e189d6fa0edce4f032d4d898624da62ed553bd542549c8e2136d540fe21b9a93"
+    },
+    {
+      "path": "templates/candidates.template.json",
+      "sha256": "4334c2e24cc04a47dfae26e4865cce4054fb5a5ec598ae0f06611b839807beff"
+    },
+    {
+      "path": "templates/candidates.template.md",
+      "sha256": "414b7c055b92151c35fea30f6894453ad225ff68ac1753a5d3a6749d9b526db3"
+    },
+    {
+      "path": "templates/content.db.schema.sql",
+      "sha256": "4316c4a52f3173699e1d324dd5bd866f2ed2cbe1b4f70bedfb23cb96827be97c"
+    },
+    {
+      "path": "templates/gitignore.template",
+      "sha256": "994cefe5ce542bf067d81c171f612c981016fc85b2aba1242acf4285e6db4f5d"
+    },
+    {
+      "path": "templates/prediction.template.md",
+      "sha256": "0202313fc196812f33b8d3ac35bedd0ee1c44e3d24b814137afb8ae051a8a499"
+    },
+    {
+      "path": "templates/retro.template.md",
+      "sha256": "398187a4b643a34f7b11f6ce0bb5ac4f328e47c2d6d0078a66e6a90d82ded3a3"
+    },
+    {
+      "path": "templates/rubric-memo.template.md",
+      "sha256": "18483d775eb3190ebb85c055a17d3293ae9bae2b25b53f0bde5b17f99a0ad0e8"
+    },
+    {
+      "path": "templates/rubric_notes.template.md",
+      "sha256": "fe47b2e13cbed3d02aec42b63f11ee43ab8a1da9f1283159a73f844323722226"
+    },
+    {
+      "path": "templates/script_patterns.template.md",
+      "sha256": "20c7432a32424ae994fe24833764896c74e22b9cbd308fc97ead68178ed42485"
+    },
+    {
+      "path": "templates/status.template.md",
+      "sha256": "2782074e12cd6b838ccdd9dc9f3d3a5b90b74151e951fb53065cf17c684b4e71"
+    },
+    {
+      "path": "templates/workflow.template.md",
+      "sha256": "a1a1b020be961b62e879463e339d544ddd5e602c06ec30e0cd3cf539fbc79b3c"
+    },
+    {
+      "path": "tools/diff_pct.py",
+      "sha256": "84a29c80b01bc0d5b109f369d7f8b43cb46b051f2a7164057b1b16603a915631"
+    },
+    {
+      "path": "tools/diff_pct_test.sh",
+      "sha256": "8bc78f6c17a25f4faf972e8f3843d38cc4af6763782e0ea88d6ba8c98f952847"
+    },
+    {
+      "path": "tools/gen-star-history.py",
+      "sha256": "ae9915197783d23dd4b763f9e8b9052e1575028953e7e5eaedadee0ef0e1214e"
+    },
+    {
+      "path": "tools/score-curve.py",
+      "sha256": "44569eb4ee10ef3d25bb15a9bb5ce27d0b8c77fc1f1b8ccf3d4cb8bbb307cc23"
+    },
+    {
+      "path": "tools/xkcd-font.css",
+      "sha256": "2dd505359c5a08d8ea6bb76e07fa81d7f8987409416ad835bd993d21d56441c5"
+    },
+    {
+      "path": "uninstall.sh",
+      "sha256": "611862deb523ed19be1f8e4e2b30f24b901aa7933196cd438201e47109c1c9ef"
+    }
+  ]
+}

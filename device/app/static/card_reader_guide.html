@@ -1,0 +1,14 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>读卡器导入 · 知流</title>
+<style>body{margin:0;background:#f6f7f9;color:#17202c;font:16px/1.8 "Microsoft YaHei","Segoe UI",sans-serif}main{max-width:800px;margin:auto;padding:24px}article{background:white;border:1px solid #e5e8ed;border-radius:18px;padding:28px}h1{font-size:27px}h2{font-size:19px}li{margin:14px 0}a{color:#3157d5}code{background:#eef1f5;padding:2px 5px;border-radius:4px;overflow-wrap:anywhere}.note{color:#6c7685}pre{background:#f6f7f9;padding:14px;overflow:auto;border-radius:8px}@media(max-width:500px){main{padding:16px}article{padding:20px}}</style></head><body><main>
+<a href="/">← 知流学习信息流</a><article><h1>从读卡器导入录音并转写</h1><p>充电宝负责供电；录音保存在 TF 卡中，读卡器负责将文件带回电脑。这个流程不需要开发板联网。</p>
+<ol><li>在开发板点击“停止保存”，等待出现<strong>保存成功</strong>。</li><li>断开开发板电源，再取出 TF 卡，插入读卡器并接到电脑。</li><li>打开知流项目文件夹，双击<strong>读卡器导入并转写.bat</strong>。</li><li>选择卡中的 <code>courses</code> 文件夹，或 <code>courses/course_006</code> 这样的单节课文件夹。选中要处理的课程，点击<strong>导入并转写</strong>。</li><li>等待本地语音识别完成，导入器会自动打开网页，可以播放录音、查看完整转写、下载文本，再返回学习信息流。</li></ol>
+<h2>文件夹示例</h2><pre>读卡器盘符:/
+  courses/
+    course_006/
+      audio.wav
+      marks.json
+      meta.json</pre>
+<p>同一节课重复导入会保留原课程和学习反馈；不同录音使用同一编号时，会另外建立课程。卡上的原录音会保留。</p>
+<p>没有“不懂”标记也可以转写和播放；带标记的录音可以生成对应学习流。上传配套课件后，还可以关联课件来源。</p>
+<p class="note">BOOT 用户键短按开关屏，长按约 1.5 秒唤醒重绘。关屏时仍可录音，因此应先停止保存，再断电取卡。</p>
+</article></main></body></html>
