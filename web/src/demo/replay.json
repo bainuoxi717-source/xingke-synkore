@@ -1,0 +1,404 @@
+{
+  "id": "public-research-sample-5min",
+  "title": "一段示例课，七种陪学时刻",
+  "subtitle": "实验设计入门 · 人工脚本示例",
+  "subject": "实验设计入门（公开示例）",
+  "date": "2026-10-02",
+  "courId": 900002,
+  "originalStartSeconds": 0,
+  "originalEndSeconds": 300,
+  "durationSeconds": 300,
+  "canvasUrl": "",
+  "mode": "prepared-replay",
+  "source": "authored-public-sample",
+  "disclosure": "人工编写的公开示例＋无声幻灯视频；13张卡片提前准备，按播放时间触发。不是原课堂录播，不运行实时识别、在线模型或自动搜索。",
+  "capabilities": [
+    "comment",
+    "term",
+    "answer",
+    "keypoint",
+    "question",
+    "history",
+    "material"
+  ],
+  "transcript": [
+    {
+      "id": "sample-0",
+      "start": 0,
+      "end": 18,
+      "text": "本示例用学习方法实验说明：研究者改变的条件记作 X，被测量的结果记作 Y。先说清问题，再判断数据能支持什么。",
+      "originalStartMs": 0
+    },
+    {
+      "id": "sample-1",
+      "start": 18,
+      "end": 36,
+      "text": "假设比较两种复习方法，复习方法是自变量，测验得分是因变量。同一个指标在不同研究问题中可能扮演不同角色。",
+      "originalStartMs": 18000
+    },
+    {
+      "id": "sample-2",
+      "start": 36,
+      "end": 55,
+      "text": "参考回答：前测是在引入实验刺激之前测量结果变量，为之后的比较提供基线。这里先记录两组学生原有的测验水平。",
+      "originalStartMs": 36000
+    },
+    {
+      "id": "sample-3",
+      "start": 55,
+      "end": 74,
+      "text": "后测在实验刺激之后进行，尽量沿用相同测量方式。前后得分变化是观察结果，不能单凭变化就确认学习方法造成了提升。",
+      "originalStartMs": 55000
+    },
+    {
+      "id": "sample-4",
+      "start": 74,
+      "end": 96,
+      "text": "实验组使用待考察的复习方法，对照组使用另一种安排。比较时还要考虑原有水平、练习时间和材料差异。",
+      "originalStartMs": 74000
+    },
+    {
+      "id": "sample-5",
+      "start": 96,
+      "end": 125,
+      "text": "如果两组的成绩都提高了，可能是练习效应，也可能与复习时间或测试难度有关。你会怎样区分这些解释？",
+      "originalStartMs": 96000
+    },
+    {
+      "id": "sample-6",
+      "start": 125,
+      "end": 155,
+      "text": "上一节示例提醒我们：两个指标一起变化，可能来自共同原因。现在加入比较组，是为了更好地审视其他解释。",
+      "originalStartMs": 125000
+    },
+    {
+      "id": "sample-7",
+      "start": 155,
+      "end": 192,
+      "text": "参考回答：明确相同的测量流程，记录基线与练习时间，并在适用条件下采用随机分配。随机分配减少系统差异的可能性，不保证每次样本完全相同。",
+      "originalStartMs": 155000
+    },
+    {
+      "id": "sample-8",
+      "start": 192,
+      "end": 218,
+      "text": "混淆变量可能同时影响条件与结果。例如两组原有学习水平不同，可能让复习方法与成绩之间看起来存在另一种关系。",
+      "originalStartMs": 192000
+    },
+    {
+      "id": "sample-9",
+      "start": 218,
+      "end": 248,
+      "text": "讨论一种方法有效之前，要先说明有效指什么、怎样测量、和谁比较，以及结论适用于哪些人和条件。",
+      "originalStartMs": 218000
+    },
+    {
+      "id": "sample-10",
+      "start": 248,
+      "end": 273,
+      "text": "可继续阅读 OpenStax Psychology 2e 第 2.2 节的实验研究方法，留意随机分配与比较条件。此链接为预先配置的参考入口，播放时不自动搜索。",
+      "originalStartMs": 248000
+    },
+    {
+      "id": "sample-11",
+      "start": 273,
+      "end": 294,
+      "text": "如果研究问题变成“讨论式课堂是否提高概念迁移”，你会如何定义结果变量？怎样让比较条件尽量可比？",
+      "originalStartMs": 273000
+    },
+    {
+      "id": "sample-12",
+      "start": 294,
+      "end": 300,
+      "text": "明确问题与变量，建立前后测，设置比较条件，检查其他解释，再限定结论范围。这里演示的是学习辅助的交互流程，不是教学有效性的实验验证。",
+      "originalStartMs": 294000
+    }
+  ],
+  "cues": [
+    {
+      "id": "follow-x-y",
+      "at": 0,
+      "type": "comment",
+      "title": "先找到问题和变量",
+      "text": "本示例用学习方法实验说明：研究者改变的条件记作 X，被测量的结果记作 Y。先说清问题，再判断数据能支持什么。",
+      "shortText": "学习方法是X，\n测验结果是Y。\n先确认问题与变量。",
+      "prepared": true,
+      "sources": [
+        {
+          "kind": "current",
+          "courId": 900002,
+          "subject": "实验设计入门（公开示例）",
+          "date": "2026-10-02",
+          "startMs": 0,
+          "endMs": 18000,
+          "text": "本示例用学习方法实验说明：研究者改变的条件记作 X，被测量的结果记作 Y。先说清问题，再判断数据能支持什么。"
+        }
+      ]
+    },
+    {
+      "id": "variables",
+      "at": 18,
+      "type": "term",
+      "title": "解释术语：变量",
+      "text": "假设比较两种复习方法，复习方法是自变量，测验得分是因变量。同一个指标在不同研究问题中可能扮演不同角色。",
+      "shortText": "自变量X：改变的条件。\n因变量Y：测量的结果。",
+      "prepared": true,
+      "sources": [
+        {
+          "kind": "current",
+          "courId": 900002,
+          "subject": "实验设计入门（公开示例）",
+          "date": "2026-10-02",
+          "startMs": 18000,
+          "endMs": 36000,
+          "text": "假设比较两种复习方法，复习方法是自变量，测验得分是因变量。同一个指标在不同研究问题中可能扮演不同角色。"
+        }
+      ]
+    },
+    {
+      "id": "pretest",
+      "at": 36,
+      "type": "answer",
+      "title": "课堂提问：什么是前测？",
+      "text": "参考回答：前测是在引入实验刺激之前测量结果变量，为之后的比较提供基线。这里先记录两组学生原有的测验水平。",
+      "shortText": "前测：刺激前先测一次Y。\n为后续比较建立基线。",
+      "prepared": true,
+      "sources": [
+        {
+          "kind": "current",
+          "courId": 900002,
+          "subject": "实验设计入门（公开示例）",
+          "date": "2026-10-02",
+          "startMs": 36000,
+          "endMs": 54000,
+          "text": "参考回答：前测是在引入实验刺激之前测量结果变量，为之后的比较提供基线。这里先记录两组学生原有的测验水平。"
+        }
+      ]
+    },
+    {
+      "id": "posttest",
+      "at": 55,
+      "type": "term",
+      "title": "解释术语：后测",
+      "text": "后测在实验刺激之后进行，尽量沿用相同测量方式。前后得分变化是观察结果，不能单凭变化就确认学习方法造成了提升。",
+      "shortText": "后测：刺激后再测一次Y。\n变化不自动等于因果。",
+      "prepared": true,
+      "sources": [
+        {
+          "kind": "current",
+          "courId": 900002,
+          "subject": "实验设计入门（公开示例）",
+          "date": "2026-10-02",
+          "startMs": 55000,
+          "endMs": 73000,
+          "text": "后测在实验刺激之后进行，尽量沿用相同测量方式。前后得分变化是观察结果，不能单凭变化就确认学习方法造成了提升。"
+        }
+      ]
+    },
+    {
+      "id": "groups",
+      "at": 74,
+      "type": "keypoint",
+      "title": "重点：保留比较条件",
+      "text": "实验组使用待考察的复习方法，对照组使用另一种安排。比较时还要考虑原有水平、练习时间和材料差异。",
+      "shortText": "实验组与对照组相比较，\n同时检查其他条件。",
+      "prepared": true,
+      "sources": [
+        {
+          "kind": "current",
+          "courId": 900002,
+          "subject": "实验设计入门（公开示例）",
+          "date": "2026-10-02",
+          "startMs": 74000,
+          "endMs": 92000,
+          "text": "实验组使用待考察的复习方法，对照组使用另一种安排。比较时还要考虑原有水平、练习时间和材料差异。"
+        }
+      ]
+    },
+    {
+      "id": "check-understanding",
+      "at": 96,
+      "type": "question",
+      "title": "想一想：为什么都提高了？",
+      "text": "如果两组的成绩都提高了，可能是练习效应，也可能与复习时间或测试难度有关。你会怎样区分这些解释？",
+      "shortText": "两组都提高了，\n能只归功于新方法吗？",
+      "prepared": true,
+      "sources": [
+        {
+          "kind": "current",
+          "courId": 900002,
+          "subject": "实验设计入门（公开示例）",
+          "date": "2026-10-02",
+          "startMs": 96000,
+          "endMs": 114000,
+          "text": "如果两组的成绩都提高了，可能是练习效应，也可能与复习时间或测试难度有关。你会怎样区分这些解释？"
+        }
+      ],
+      "question": "想一想：为什么都提高了？",
+      "choices": [
+        {
+          "id": "a",
+          "text": "先明确变量和比较条件",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "只比较最后一次得分",
+          "correct": false
+        }
+      ],
+      "explanation": "先检查研究问题、测量方式与其他解释。"
+    },
+    {
+      "id": "history-link",
+      "at": 125,
+      "type": "history",
+      "title": "关联旧知：相关与因果",
+      "text": "上一节示例提醒我们：两个指标一起变化，可能来自共同原因。现在加入比较组，是为了更好地审视其他解释。",
+      "shortText": "接回上一节：\n相关不等于因果，\n比较帮助检查解释。",
+      "prepared": true,
+      "sources": [
+        {
+          "kind": "history",
+          "courId": 900001,
+          "subject": "相关与因果（公开示例）",
+          "date": "2026-10-01",
+          "startMs": 0,
+          "endMs": 18000,
+          "text": "两个指标一起变化，不足以单独确立因果关系；应继续检查共同原因。"
+        }
+      ]
+    },
+    {
+      "id": "journalism",
+      "at": 155,
+      "type": "answer",
+      "title": "课堂提问：如何提高可比性？",
+      "text": "参考回答：明确相同的测量流程，记录基线与练习时间，并在适用条件下采用随机分配。随机分配减少系统差异的可能性，不保证每次样本完全相同。",
+      "shortText": "明确测量流程与基线，\n记录时间，考虑随机分配。",
+      "prepared": true,
+      "sources": [
+        {
+          "kind": "current",
+          "courId": 900002,
+          "subject": "实验设计入门（公开示例）",
+          "date": "2026-10-02",
+          "startMs": 155000,
+          "endMs": 173000,
+          "text": "参考回答：明确相同的测量流程，记录基线与练习时间，并在适用条件下采用随机分配。随机分配减少系统差异的可能性，不保证每次样本完全相同。"
+        }
+      ]
+    },
+    {
+      "id": "effects",
+      "at": 192,
+      "type": "term",
+      "title": "解释术语：混淆变量",
+      "text": "混淆变量可能同时影响条件与结果。例如两组原有学习水平不同，可能让复习方法与成绩之间看起来存在另一种关系。",
+      "shortText": "混淆变量：\n可能干扰解释的其他因素。",
+      "prepared": true,
+      "sources": [
+        {
+          "kind": "current",
+          "courId": 900002,
+          "subject": "实验设计入门（公开示例）",
+          "date": "2026-10-02",
+          "startMs": 192000,
+          "endMs": 210000,
+          "text": "混淆变量可能同时影响条件与结果。例如两组原有学习水平不同，可能让复习方法与成绩之间看起来存在另一种关系。"
+        }
+      ]
+    },
+    {
+      "id": "measure-before-claim",
+      "at": 218,
+      "type": "comment",
+      "title": "先说明怎样测量",
+      "text": "讨论一种方法有效之前，要先说明有效指什么、怎样测量、和谁比较，以及结论适用于哪些人和条件。",
+      "shortText": "先说测什么、怎样测，\n再说明与谁比较。",
+      "prepared": true,
+      "sources": [
+        {
+          "kind": "current",
+          "courId": 900002,
+          "subject": "实验设计入门（公开示例）",
+          "date": "2026-10-02",
+          "startMs": 218000,
+          "endMs": 236000,
+          "text": "讨论一种方法有效之前，要先说明有效指什么、怎样测量、和谁比较，以及结论适用于哪些人和条件。"
+        }
+      ]
+    },
+    {
+      "id": "web-extension",
+      "at": 248,
+      "type": "material",
+      "title": "延伸阅读：实验设计",
+      "text": "可继续阅读 OpenStax Psychology 2e 第 2.2 节的实验研究方法，留意随机分配与比较条件。此链接为预先配置的参考入口，播放时不自动搜索。",
+      "shortText": "延伸阅读：\n实验研究与随机分配。\n参考入口见网页。",
+      "prepared": true,
+      "sources": [
+        {
+          "kind": "web",
+          "title": "OpenStax Psychology 2e · 2.2 Approaches to Research",
+          "url": "https://openstax.org/books/psychology-2e/pages/2-2-approaches-to-research",
+          "text": "预先配置的实验研究参考入口；播放期间不检索。"
+        }
+      ]
+    },
+    {
+      "id": "apply-example",
+      "at": 273,
+      "type": "question",
+      "title": "提出问题：换一个情境",
+      "text": "如果研究问题变成“讨论式课堂是否提高概念迁移”，你会如何定义结果变量？怎样让比较条件尽量可比？",
+      "shortText": "试着换个问题：\n怎样测量概念迁移？",
+      "prepared": true,
+      "sources": [
+        {
+          "kind": "current",
+          "courId": 900002,
+          "subject": "实验设计入门（公开示例）",
+          "date": "2026-10-02",
+          "startMs": 273000,
+          "endMs": 291000,
+          "text": "如果研究问题变成“讨论式课堂是否提高概念迁移”，你会如何定义结果变量？怎样让比较条件尽量可比？"
+        }
+      ],
+      "question": "提出问题：换一个情境",
+      "choices": [
+        {
+          "id": "a",
+          "text": "先明确变量和比较条件",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "只比较最后一次得分",
+          "correct": false
+        }
+      ],
+      "explanation": "先检查研究问题、测量方式与其他解释。"
+    },
+    {
+      "id": "recap",
+      "at": 294,
+      "type": "keypoint",
+      "title": "五分钟回顾",
+      "text": "明确问题与变量，建立前后测，设置比较条件，检查其他解释，再限定结论范围。这里演示的是学习辅助的交互流程，不是教学有效性的实验验证。",
+      "shortText": "变量、前后测、比较组，\n以及其他可能的解释。",
+      "prepared": true,
+      "sources": [
+        {
+          "kind": "current",
+          "courId": 900002,
+          "subject": "实验设计入门（公开示例）",
+          "date": "2026-10-02",
+          "startMs": 294000,
+          "endMs": 300000,
+          "text": "明确问题与变量，建立前后测，设置比较条件，检查其他解释，再限定结论范围。这里演示的是学习辅助的交互流程，不是教学有效性的实验验证。"
+        }
+      ]
+    }
+  ]
+}

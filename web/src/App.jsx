@@ -43,7 +43,7 @@ export default function App() {
           <BrandWordmark />
           <div className="topbar-actions">
             {location.pathname !== '/' && <Link className="back-home" to="/"><ArrowLeft size={15} /> 返回首页</Link>}
-            <span className={`connection-status ${connection}`}><i />{connection === 'ready' ? '本地空间已连接' : connection === 'error' ? '本地空间未连接' : '正在连接'}</span>
+            <span className={`connection-status ${connection}`} title={import.meta.env.VITE_PUBLIC_DEMO === '1' ? '公开示例课程与预设讲解，不调用在线模型；互动保存在当前浏览器。' : undefined}><i />{import.meta.env.VITE_PUBLIC_DEMO === '1' ? '公开演示 · 预设内容' : connection === 'ready' ? '本地空间已连接' : connection === 'error' ? '本地空间未连接' : '正在连接'}</span>
           </div>
         </header>
         <main className="agent-main" id="agent-main" ref={mainRef}>
@@ -54,13 +54,13 @@ export default function App() {
             <Route path="/replay-demo" element={<Workspace><ReplayDemo /></Workspace>} />
             <Route path="/qa" element={<Workspace><QA /></Workspace>} />
             <Route path="/restyle" element={<Workspace><Restyle /></Workspace>} />
-            <Route path="/personas/custom" element={<Workspace><CustomPersona /></Workspace>} />
+            <Route path="/personas/custom" element={<Workspace>{import.meta.env.VITE_PUBLIC_DEMO === '1' ? <PublicDemoInfo /> : <CustomPersona />}</Workspace>} />
             <Route path="/lecture-notes" element={<Workspace><LectureNotes /></Workspace>} />
             <Route path="/videos" element={<Workspace><Videos /></Workspace>} />
             <Route path="/notes" element={<Workspace><Notes /></Workspace>} />
             <Route path="/materials" element={<Workspace><Materials /></Workspace>} />
             <Route path="/plan" element={<Workspace><Plan /></Workspace>} />
-            <Route path="/settings" element={<Workspace><SettingsPage /></Workspace>} />
+            <Route path="/settings" element={<Workspace>{import.meta.env.VITE_PUBLIC_DEMO === '1' ? <PublicDemoInfo /> : <SettingsPage />}</Workspace>} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </main>
@@ -69,6 +69,7 @@ export default function App() {
   );
 }
 function Workspace({ children }) { return <div className="workspace-page">{children}</div>; }
+function PublicDemoInfo() { return <section className="panel"><h1>公开演示说明</h1><p>这里提供人工编写的示例课程、预设讲解与浏览器内互动。没有接入在线模型或私人课程。</p><p>人物调研、资料上传、真人音色和 USB 开发板连接，请从 GitHub 下载完整本地版并使用自己的授权配置。</p><p><Link to="/qa">体验学习问答</Link> · <Link to="/replay-demo">五分钟随堂伴学</Link> · <a href="https://github.com/bainuoxi717-source/xingke-synkore" target="_blank" rel="noreferrer">完整源码与运行说明 ↗</a></p></section>; }
 function HomeRoute() {
   const location = useLocation(), params = new URLSearchParams(location.search);
   if (location.hash === '#learning-feed' || params.has('post')) return <Navigate to={{ pathname: '/learning-feed', search: location.search }} replace />;

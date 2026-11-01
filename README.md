@@ -2,6 +2,10 @@
 
 把个人学习 Agent 和一只桌面小幽灵连接起来：网页负责课程资料、检索、问答和讲解，NiceMCU T5 开发板负责桌宠互动、录音标记和伴学提示。
 
+**在线体验：[醒客公开演示](https://xingke-synkore-demo.bainuoxi717.chatgpt.site)** · [直接进入五分钟随堂伴学](https://xingke-synkore-demo.bainuoxi717.chatgpt.site/replay-demo)
+
+公开演示无需登录，提供示例问答、换个讲法、信息流互动与五分钟伴学。问答和讲解为预设内容，不调用在线模型；互动只保存在当前浏览器。完整本地版按下方步骤运行，可使用自己的课程、服务配置与开发板。
+
 > 网站中的品牌字样为「synkore·醒课」。这是作品的公开源码归档；没有包含私人课程、账号登录态、API 密钥或克隆音色。
 
 ![学习空间](docs/images/home.png)
@@ -82,6 +86,8 @@ npm run test:browser
 ```
 
 也可设置 `SYNKORE_BROWSER_CHANNEL=chrome`，使用本机已安装的 Chrome 运行浏览器测试。
+
+公开演示的静态构建：`npm run build:public`，输出 `web/dist/`。可执行 `node scripts/test-public-site.mjs web` 验证示例交互与浏览器内数据隔离（需要 Chrome）。默认 `npm run build` 仍构建连接本地后端的完整网站。
 
 上述自动测试使用隔离数据和模拟提供商，不调用收费模型。实板测试需要实际硬件，不能由 CI 代替。版本验证记录见 [VALIDATION.md](docs/VALIDATION.md)。
 

@@ -3,8 +3,13 @@
   "version": "1.0.0",
   "private": true,
   "description": "醒客 / Synkore：个人学习 Agent、随堂伴学与 T5 小幽灵桌面伴侣",
-  "engines": { "node": ">=24" },
-  "workspaces": ["server", "web"],
+  "engines": {
+    "node": ">=24"
+  },
+  "workspaces": [
+    "server",
+    "web"
+  ],
   "scripts": {
     "build": "npm --workspace web run build",
     "seed": "node scripts/seed-demo.mjs",
@@ -12,7 +17,10 @@
     "dev": "npm --workspace web run dev",
     "test": "node --experimental-test-module-mocks --test server/tests/custom-personas.test.mjs server/tests/custom-persona-flow.test.mjs server/tests/custom-persona-media.test.mjs server/tests/notes-recipe.test.mjs server/tests/feed-writers.test.mjs server/tests/listening.test.mjs server/src/services/attachments.test.js server/src/services/learning-sources.test.js",
     "test:browser": "node server/tests/qa-lecture-selection.browser.mjs",
-    "audit:public": "node scripts/audit-public.mjs"
+    "audit:public": "node scripts/audit-public.mjs",
+    "build:public": "npm --workspace web run build:public"
   },
-  "devDependencies": { "playwright": "1.56.1" }
+  "devDependencies": {
+    "playwright": "1.56.1"
+  }
 }

@@ -1,0 +1,430 @@
+{
+  "ok": true,
+  "posts": [
+    {
+      "id": "p-426f72b2a30738745df9510d",
+      "origin": "qa",
+      "title": "把分手倒着放，你还会先骂他吗",
+      "topic": "英语从句应该怎样分析",
+      "dek": "这次不抄答案，想听你怎么反驳。",
+      "body": "假设有一部情感片：同一段争执，先从离开的人视角讲，再从留下的人视角讲。台词一字没改，观众却换了阵营。如果再把结局放到开头，你会不会又改变判断？\n\n## 先写一首短诗\n\n把结尾折回开场，\n让背影再走一次。\n银幕没有替谁作证，\n只是把缺失的一帧还给你。\n\n*原创情境诗，并非艺人原作。*\n\n## 先别急着站队\n\n你站的是一个人，还是镜头让你看见的那一面？这个场景是为了讨论而虚构的；它不是某位歌手的经历、真实电影情节，也不是某一局比赛的复盘。\n\n## 换一把尺子再看\n\n这次借来的视角是「英语从句应该怎样分析」。先看原材料里真正说了什么：\n\n> 分析从句时，先找主句的主语和谓语，再辨认从句的连接词\n\n把材料当成判断的尺子，不把一个顺耳的故事当成证明。\n\n先挑出原材料中的一个定义或适用条件，再回到这个场景：有哪些事实满足它，有哪些信息尚未出现？如果找不到对应关系，就应该保留这个疑问，而不是为了讲得好听硬套结论。\n\n镜头切到另一个人，补上你之前没看见的条件，你的判断会不会变？这是一道迁移问题，不把类比当作理论的直接证明。\n\n## 把依据留在这里\n\n分析从句时，先找主句的主语和谓语，再辨认从句的连接词。连接词承担的成分和从句在主句中的位置，能够帮助判断其作用。先厘清句子结构，再尝试解释语义，避免只按单词顺序猜测。\n\n## 这次轮到你来反驳\n\n不用急着赞同这篇。选一句你不认同的，把你的条件、依据或反例写进评论。也可以改写上面的场景、诗句或副歌，让它更准确地表达这次的知识。\n\n> 公开示例：内容与讨论已预先编写，不调用在线模型。",
+      "category": "把它写成诗",
+      "pending": false,
+      "mode": "source-edit",
+      "recipeVersion": "voicebox-learning-v4",
+      "replies": [],
+      "myth": null,
+      "sourceIds": [
+        "qa-8"
+      ],
+      "cover": {
+        "id": "pexels-14525932",
+        "photoId": "14525932",
+        "kind": "cinema",
+        "title": "Vintage Camera and Film Photo",
+        "creator": "Jonathan Borba",
+        "sourcePage": "https://www.pexels.com/photo/vintage-camera-and-film-photo-14525932/",
+        "provider": "Pexels",
+        "license": "Pexels License",
+        "licenseURL": "https://www.pexels.com/license/",
+        "alt": "Vintage Camera and Film Photo",
+        "src": "/assets/feed-covers/pexels-14525932.jpg",
+        "sha256": "58c689f1dd3ac6846caf3da59a46cd1c34a01c609793bda46ce76b3585621ea0",
+        "bytes": 42904,
+        "originalURL": "https://images.pexels.com/photos/14525932/pexels-photo-14525932.jpeg?auto=compress&cs=tinysrgb&w=1000&q=82",
+        "type": "photo",
+        "cachedAt": "2026-10-31T21:31:11.196Z",
+        "caption": "情境摄影，非艺人照片或事件现场"
+      },
+      "topical": null,
+      "interest": "情感片",
+      "format": "poem",
+      "coverImage": "/assets/voicebox/cinema.png",
+      "coverAlt": "银幕前的匿名背影，AI生成的黑白主题配图",
+      "sceneKind": "cinema",
+      "editorialVersion": "voicebox-interest-v3",
+      "seedComments": [
+        {
+          "role": "challenger",
+          "name": "先别急着同意",
+          "stance": "我站反方",
+          "text": "我先替反方说话：换个视角不等于洗白，做过的选择不会因为多一个镜头就消失。你认为补上什么事实，才值得重新评价这个人？",
+          "sourceIds": [
+            "qa-8"
+          ]
+        },
+        {
+          "role": "evidence",
+          "name": "把依据放桌上",
+          "stance": "另一边，也有理由",
+          "text": "我愿意看完另一边再下判断。镜头没给出的信息，可能正是评价中缺的条件。不是人人都该被原谅，但哪些证据会让你改变态度？",
+          "sourceIds": [
+            "qa-8"
+          ]
+        },
+        {
+          "role": "alternative",
+          "name": "换个座位再看",
+          "stance": "换个情境",
+          "text": "我暂时不站人物。观众知道、角色知道和事情真的发生，可能是三层。我们现在反驳的是哪一层？把一处具体片段或材料条件拿出来谈。",
+          "sourceIds": [
+            "qa-8"
+          ]
+        }
+      ],
+      "source": {
+        "key": "qa:8",
+        "origin": "qa",
+        "messageId": 8,
+        "sessionId": 4,
+        "question": "英语从句应该怎样分析？",
+        "title": "英语从句应该怎样分析？",
+        "body": "分析从句时，先找主句的主语和谓语，再辨认从句的连接词。连接词承担的成分和从句在主句中的位置，能够帮助判断其作用。先厘清句子结构，再尝试解释语义，避免只按单词顺序猜测。",
+        "courseName": "通识学习",
+        "teacher": "示例教师",
+        "personaName": "",
+        "sources": [
+          {
+            "id": "qa-8",
+            "label": "原始问答",
+            "kind": "qa",
+            "text": "分析从句时，先找主句的主语和谓语，再辨认从句的连接词。连接词承担的成分和从句在主句中的位置，能够帮助判断其作用。先厘清句子结构，再尝试解释语义，避免只按单词顺序猜测。"
+          }
+        ],
+        "createdAt": "2026-11-01T01:00:01Z"
+      },
+      "sourceHash": "ebe9d721aba1e76ac46fa854fead39e99e6663a7187c7913a391a7074cdd9c51",
+      "createdAt": "2026-11-01T01:00:01Z",
+      "updatedAt": "2026-11-02T02:30:00Z",
+      "personalPreference": "",
+      "discussionCount": 3,
+      "feedback": null,
+      "saved": false,
+      "priority": 86.99248283399471,
+      "reason": "来自你问过的问题",
+      "originalTitle": "你以为在等结局，其实早就选好了立场｜写成一首诗",
+      "recommendationScore": 86.99248283399471,
+      "recommendationReason": "来自你问过的问题",
+      "prepared": true
+    },
+    {
+      "id": "p-d13dc7055255738e0e3b556c",
+      "origin": "qa",
+      "title": "再放一次开场，答案可能没那么简单",
+      "topic": "算法的递归该怎么理解",
+      "dek": "故事听着顺，不代表结论已经成立。",
+      "body": "假设有一部情感片：同一段争执，先从离开的人视角讲，再从留下的人视角讲。台词一字没改，观众却换了阵营。如果再把结局放到开头，你会不会又改变判断？\n\n## 先别急着站队\n\n你站的是一个人，还是镜头让你看见的那一面？这个场景是为了讨论而虚构的；它不是某位歌手的经历、真实电影情节，也不是某一局比赛的复盘。\n\n## 换一把尺子再看\n\n这次借来的视角是「算法的递归该怎么理解」。先看原材料里真正说了什么：\n\n> 先明确停止条件，再明确如何缩小问题规模\n\n把材料当成判断的尺子，不把一个顺耳的故事当成证明。\n\n先挑出原材料中的一个定义或适用条件，再回到这个场景：有哪些事实满足它，有哪些信息尚未出现？如果找不到对应关系，就应该保留这个疑问，而不是为了讲得好听硬套结论。\n\n镜头切到另一个人，补上你之前没看见的条件，你的判断会不会变？这是一道迁移问题，不把类比当作理论的直接证明。\n\n## 把依据留在这里\n\n递归是把一个问题转成同类的更小问题。先明确停止条件，再明确如何缩小问题规模。执行时会保留当前状态，等更小问题得到答案后再回来处理。可以先从最简单的输入开始跟踪。\n\n## 这次轮到你来反驳\n\n不用急着赞同这篇。选一句你不认同的，把你的条件、依据或反例写进评论。也可以改写上面的场景、诗句或副歌，让它更准确地表达这次的知识。\n\n> 公开示例：内容与讨论已预先编写，不调用在线模型。",
+      "category": "换个角度解读",
+      "pending": false,
+      "mode": "source-edit",
+      "recipeVersion": "voicebox-learning-v4",
+      "replies": [],
+      "myth": null,
+      "sourceIds": [
+        "qa-6"
+      ],
+      "cover": {
+        "type": "text",
+        "style": "ink",
+        "intendedType": "text"
+      },
+      "topical": null,
+      "interest": "诺兰的电影",
+      "format": "analysis",
+      "coverImage": "/assets/voicebox/cinema.png",
+      "coverAlt": "银幕前的匿名背影，AI生成的黑白主题配图",
+      "sceneKind": "cinema",
+      "editorialVersion": "voicebox-interest-v3",
+      "seedComments": [
+        {
+          "role": "challenger",
+          "name": "先别急着同意",
+          "stance": "我站反方",
+          "text": "我先替反方说话：换个视角不等于洗白，做过的选择不会因为多一个镜头就消失。你认为补上什么事实，才值得重新评价这个人？",
+          "sourceIds": [
+            "qa-6"
+          ]
+        },
+        {
+          "role": "evidence",
+          "name": "把依据放桌上",
+          "stance": "另一边，也有理由",
+          "text": "我愿意看完另一边再下判断。镜头没给出的信息，可能正是评价中缺的条件。不是人人都该被原谅，但哪些证据会让你改变态度？",
+          "sourceIds": [
+            "qa-6"
+          ]
+        },
+        {
+          "role": "alternative",
+          "name": "换个座位再看",
+          "stance": "换个情境",
+          "text": "我暂时不站人物。观众知道、角色知道和事情真的发生，可能是三层。我们现在反驳的是哪一层？把一处具体片段或材料条件拿出来谈。",
+          "sourceIds": [
+            "qa-6"
+          ]
+        }
+      ],
+      "source": {
+        "key": "qa:6",
+        "origin": "qa",
+        "messageId": 6,
+        "sessionId": 3,
+        "question": "算法的递归该怎么理解？",
+        "title": "算法的递归该怎么理解？",
+        "body": "递归是把一个问题转成同类的更小问题。先明确停止条件，再明确如何缩小问题规模。执行时会保留当前状态，等更小问题得到答案后再回来处理。可以先从最简单的输入开始跟踪。",
+        "courseName": "通识学习",
+        "teacher": "示例教师",
+        "personaName": "",
+        "sources": [
+          {
+            "id": "qa-6",
+            "label": "原始问答",
+            "kind": "qa",
+            "text": "递归是把一个问题转成同类的更小问题。先明确停止条件，再明确如何缩小问题规模。执行时会保留当前状态，等更小问题得到答案后再回来处理。可以先从最简单的输入开始跟踪。"
+          }
+        ],
+        "createdAt": "2026-11-01T01:00:01Z"
+      },
+      "sourceHash": "5b3e86f3c0c2a0c77fe2943b75cf156100f71238593f06031febac538d7d1414",
+      "createdAt": "2026-11-01T01:00:01Z",
+      "updatedAt": "2026-11-02T02:30:00Z",
+      "personalPreference": "",
+      "discussionCount": 3,
+      "feedback": null,
+      "saved": false,
+      "priority": 86.99248281580688,
+      "reason": "来自你问过的问题",
+      "originalTitle": "把反派的镜头补上，你还骂得下去吗？",
+      "recommendationScore": 86.99248281580688,
+      "recommendationReason": "来自你问过的问题",
+      "prepared": true
+    },
+    {
+      "id": "p-ea3b6a8f5ab50423e7a2c192",
+      "origin": "qa",
+      "title": "别用一句没事，把所有问题都收掉",
+      "topic": "自我披露怎样促进人际关系",
+      "dek": "换一个位置，有些话就不一样了。",
+      "body": "凌晨，你把一句话打进对话框，删掉，又打回来。耳机里的歌唱完了，聊天框仍然没有动静。有人说，沉默已经是答案；也有人说，别替另一个人把台词写完。\n\n## 先别急着站队\n\n一句没回的消息，究竟能证明多少事？这个场景是为了讨论而虚构的；它不是某位歌手的经历、真实电影情节，也不是某一局比赛的复盘。\n\n## 换一把尺子再看\n\n这次借来的视角是「自我披露怎样促进人际关系」。先看原材料里真正说了什么：\n\n> 自我披露是向他人分享个人信息、感受或经历的过程\n\n先问“谁知道什么”，再判断一句话该不该说。\n\n没回消息是你看见的行为，“不在乎我”却是你补上的解释。把自己的期待说出来，是提供信息；把对方必须回应当成结论，是另一回事。自我表露也有边界，不意味着必须交出所有秘密。\n\n对方不是冷淡，只是不知道怎样开口，你的判断会不会变？这是一道迁移问题，不把类比当作理论的直接证明。\n\n## 把依据留在这里\n\n自我披露是向他人分享个人信息、感受或经历的过程。适当的披露能够帮助双方理解彼此。披露的深度应当与关系发展和情境相适应，需要尊重边界，并留意对方是否愿意回应。\n\n## 这次轮到你来反驳\n\n不用急着赞同这篇。选一句你不认同的，把你的条件、依据或反例写进评论。也可以改写上面的场景、诗句或副歌，让它更准确地表达这次的知识。\n\n> 公开示例：内容与讨论已预先编写，不调用在线模型。",
+      "category": "换个角度解读",
+      "pending": false,
+      "mode": "source-edit",
+      "recipeVersion": "voicebox-learning-v4",
+      "replies": [],
+      "myth": null,
+      "sourceIds": [
+        "qa-4"
+      ],
+      "cover": {
+        "id": "pexels-8714397",
+        "photoId": "8714397",
+        "kind": "music",
+        "title": "Headphones and Consoles for Music Production",
+        "creator": "TStudio",
+        "sourcePage": "https://www.pexels.com/photo/headphones-and-consoles-for-music-production-8714397/",
+        "provider": "Pexels",
+        "license": "Pexels License",
+        "licenseURL": "https://www.pexels.com/license/",
+        "alt": "Headphones and Consoles for Music Production",
+        "src": "/assets/feed-covers/pexels-8714397.jpg",
+        "sha256": "9e05c452370eeff5109403f7b8d76d050019cd21a30af7909d625ce82b03bb98",
+        "bytes": 87314,
+        "originalURL": "https://images.pexels.com/photos/8714397/pexels-photo-8714397.jpeg?auto=compress&cs=tinysrgb&w=1000&q=82",
+        "type": "photo",
+        "cachedAt": "2026-10-31T21:31:10.192Z",
+        "caption": "情境摄影，非艺人照片或事件现场"
+      },
+      "topical": null,
+      "interest": "林俊杰",
+      "format": "analysis",
+      "coverImage": "/assets/voicebox/music.png",
+      "coverAlt": "录音室里的话筒和耳机，AI生成的黑白主题配图",
+      "sceneKind": "music",
+      "editorialVersion": "voicebox-interest-v3",
+      "seedComments": [
+        {
+          "role": "challenger",
+          "name": "先别急着同意",
+          "stance": "我站反方",
+          "text": "我站“沉默也有分量”这边。没回话不等于一切，但无限替对方补理由也不公平。你会给等待设什么界限？怎样区分实际行为和脑补？",
+          "sourceIds": [
+            "qa-4"
+          ]
+        },
+        {
+          "role": "evidence",
+          "name": "把依据放桌上",
+          "stance": "另一边，也有理由",
+          "text": "我偏向先把期待说清。比起让一首歌替对方作答，我更相信能核对的沟通。但这不代表对方有义务交出所有私事；这个边界你怎么划？",
+          "sourceIds": [
+            "qa-4"
+          ]
+        },
+        {
+          "role": "alternative",
+          "name": "换个座位再看",
+          "stance": "换个情境",
+          "text": "你们都在猜“他怎么想”。如果把问题换成“我需要什么沟通”，是在找回主动，还是绕开事实？欢迎用文章里的依据反驳我。",
+          "sourceIds": [
+            "qa-4"
+          ]
+        }
+      ],
+      "source": {
+        "key": "qa:4",
+        "origin": "qa",
+        "messageId": 4,
+        "sessionId": 2,
+        "question": "自我披露怎样促进人际关系？",
+        "title": "自我披露怎样促进人际关系？",
+        "body": "自我披露是向他人分享个人信息、感受或经历的过程。适当的披露能够帮助双方理解彼此。披露的深度应当与关系发展和情境相适应，需要尊重边界，并留意对方是否愿意回应。",
+        "courseName": "通识学习",
+        "teacher": "示例教师",
+        "personaName": "",
+        "sources": [
+          {
+            "id": "qa-4",
+            "label": "原始问答",
+            "kind": "qa",
+            "text": "自我披露是向他人分享个人信息、感受或经历的过程。适当的披露能够帮助双方理解彼此。披露的深度应当与关系发展和情境相适应，需要尊重边界，并留意对方是否愿意回应。"
+          }
+        ],
+        "createdAt": "2026-11-01T01:00:01Z"
+      },
+      "sourceHash": "3b52aa26277ceba6bd62d6bce450704f5ec0bcee112a39bb30adc2628d35b30f",
+      "createdAt": "2026-11-01T01:00:01Z",
+      "updatedAt": "2026-11-02T02:30:00Z",
+      "personalPreference": "",
+      "discussionCount": 3,
+      "feedback": null,
+      "saved": false,
+      "priority": 86.99248281580688,
+      "reason": "来自你问过的问题",
+      "originalTitle": "那句没回的消息，真有那么多潜台词？",
+      "recommendationScore": 86.99248281580688,
+      "recommendationReason": "来自你问过的问题",
+      "prepared": true
+    },
+    {
+      "id": "p-480a24868cd55e9ac4e4834e",
+      "origin": "qa",
+      "title": "这段关系要重播，还是该换一个问法",
+      "topic": "极限存在，为什么函数不一定有定义",
+      "dek": "这次不抄答案，想听你怎么反驳。",
+      "body": "凌晨，你把一句话打进对话框，删掉，又打回来。耳机里的歌唱完了，聊天框仍然没有动静。有人说，沉默已经是答案；也有人说，别替另一个人把台词写完。\n\n## 先写一首短诗\n\n一路靠近那一点留白，\n未必能把空白叫作抵达。\n把方向和终点分开问，\n才听见问题各自的回答。\n\n*原创情境诗，并非艺人原作。*\n\n## 先别急着站队\n\n一句没回的消息，究竟能证明多少事？这个场景是为了讨论而虚构的；它不是某位歌手的经历、真实电影情节，也不是某一局比赛的复盘。\n\n## 换一把尺子再看\n\n这次借来的视角是「极限存在，为什么函数不一定有定义」。先看原材料里真正说了什么：\n\n> 极限描述的是自变量趋近某一点时，函数值趋近的状态\n\n把“越来越接近”和“在那一点是什么”分开问。\n\n一段关系正在靠近，不等于另一种关系已经成立。这里只借用“趋近与取到需要分开”的直觉：人的感情不是函数，不能拿一个数学结论替对方表态。回到原材料，确认极限与该点定义分别在回答什么。\n\n对方不是冷淡，只是不知道怎样开口，你的判断会不会变？这是一道迁移问题，不把类比当作理论的直接证明。\n\n## 把依据留在这里\n\n极限描述的是自变量趋近某一点时，函数值趋近的状态。函数在该点没有定义，仍然可能在趋近过程中接近确定的数值。例如，约分前后的表达式只在分母不为零的范围内相等。不能直接把约分结果当作原函数在该点的定义。\n\n## 这次轮到你来反驳\n\n不用急着赞同这篇。选一句你不认同的，把你的条件、依据或反例写进评论。也可以改写上面的场景、诗句或副歌，让它更准确地表达这次的知识。\n\n> 公开示例：内容与讨论已预先编写，不调用在线模型。",
+      "category": "把它写成诗",
+      "pending": false,
+      "mode": "source-edit",
+      "recipeVersion": "voicebox-learning-v4",
+      "replies": [],
+      "myth": null,
+      "sourceIds": [
+        "qa-2"
+      ],
+      "cover": {
+        "id": "pexels-4898306",
+        "photoId": "4898306",
+        "kind": "music",
+        "title": "Musicians Performing Onstage",
+        "sourcePage": "https://www.pexels.com/photo/musicians-performing-onstage-4898306/",
+        "provider": "Pexels",
+        "license": "Pexels License",
+        "licenseURL": "https://www.pexels.com/license/",
+        "alt": "Musicians performing live on stage with acoustic guitar and microphone under colorful stage lights.",
+        "src": "/assets/feed-covers/pexels-4898306.jpg",
+        "sha256": "ef56eebccc2976204cfcfdf9ca4782b98d8ee5a095dede62eed3846c374915d6",
+        "bytes": 69753,
+        "originalURL": "https://images.pexels.com/photos/4898306/pexels-photo-4898306.jpeg?auto=compress&cs=tinysrgb&w=1000&q=82",
+        "type": "photo",
+        "cachedAt": "2026-10-31T21:31:04.830Z",
+        "caption": "情境摄影，非艺人照片或事件现场"
+      },
+      "topical": null,
+      "interest": "薛之谦",
+      "format": "poem",
+      "coverImage": "/assets/voicebox/music.png",
+      "coverAlt": "录音室里的话筒和耳机，AI生成的黑白主题配图",
+      "sceneKind": "music",
+      "editorialVersion": "voicebox-interest-v3",
+      "seedComments": [
+        {
+          "role": "challenger",
+          "name": "先别急着同意",
+          "stance": "我站反方",
+          "text": "我站“沉默也有分量”这边。没回话不等于一切，但无限替对方补理由也不公平。你会给等待设什么界限？怎样区分实际行为和脑补？",
+          "sourceIds": [
+            "qa-2"
+          ]
+        },
+        {
+          "role": "evidence",
+          "name": "把依据放桌上",
+          "stance": "另一边，也有理由",
+          "text": "我偏向先把期待说清。比起让一首歌替对方作答，我更相信能核对的沟通。但这不代表对方有义务交出所有私事；这个边界你怎么划？",
+          "sourceIds": [
+            "qa-2"
+          ]
+        },
+        {
+          "role": "alternative",
+          "name": "换个座位再看",
+          "stance": "换个情境",
+          "text": "你们都在猜“他怎么想”。如果把问题换成“我需要什么沟通”，是在找回主动，还是绕开事实？欢迎用文章里的依据反驳我。",
+          "sourceIds": [
+            "qa-2"
+          ]
+        }
+      ],
+      "source": {
+        "key": "qa:2",
+        "origin": "qa",
+        "messageId": 2,
+        "sessionId": 1,
+        "question": "极限存在，为什么函数不一定有定义？",
+        "title": "极限存在，为什么函数不一定有定义？",
+        "body": "极限描述的是自变量趋近某一点时，函数值趋近的状态。函数在该点没有定义，仍然可能在趋近过程中接近确定的数值。例如，约分前后的表达式只在分母不为零的范围内相等。不能直接把约分结果当作原函数在该点的定义。",
+        "courseName": "微积分基础",
+        "teacher": "示例教师",
+        "personaName": "",
+        "sources": [
+          {
+            "id": "qa-2",
+            "label": "原始问答",
+            "kind": "qa",
+            "text": "极限描述的是自变量趋近某一点时，函数值趋近的状态。函数在该点没有定义，仍然可能在趋近过程中接近确定的数值。例如，约分前后的表达式只在分母不为零的范围内相等。不能直接把约分结果当作原函数在该点的定义。"
+          }
+        ],
+        "createdAt": "2026-11-01T01:00:01Z"
+      },
+      "sourceHash": "9caf751d32786fe6f747f0b69b17780ab397ebb4e5e76f4df45a63dc9df442ff",
+      "createdAt": "2026-11-01T01:00:01Z",
+      "updatedAt": "2026-11-02T02:30:00Z",
+      "personalPreference": "",
+      "discussionCount": 3,
+      "feedback": null,
+      "saved": false,
+      "priority": 86.99248281415343,
+      "reason": "来自你问过的问题",
+      "originalTitle": "别把歌听成复合申请，先等等｜写成一首诗",
+      "recommendationScore": 86.99248281415343,
+      "recommendationReason": "来自你问过的问题",
+      "prepared": true
+    }
+  ],
+  "total": 4,
+  "counts": {
+    "all": 4,
+    "pending": 0,
+    "qa": 4,
+    "important": 0,
+    "unclear": 0,
+    "saved": 0
+  },
+  "covers": {
+    "availablePhotos": 39,
+    "usedPhotos": 3,
+    "textRatio": 0.3,
+    "source": "已检索并缓存的授权摄影图库"
+  },
+  "nextOffset": null
+}

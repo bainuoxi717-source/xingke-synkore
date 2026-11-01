@@ -2,10 +2,12 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import App from './App.jsx';
+import { installPublicDemo } from './demo/runtime.js';
 import './styles.css';
 import './workspace-theme.css';
 import './agent.css';
 
+if (import.meta.env.VITE_PUBLIC_DEMO === '1') installPublicDemo();
 createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>

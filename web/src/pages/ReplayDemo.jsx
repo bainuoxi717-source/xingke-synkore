@@ -4,7 +4,8 @@ import { Play, Pause, RotateCcw, ChevronLeft, ChevronRight, MessageCircle, Star,
 import { MascotCharacter } from '../components/LearningMascot.jsx';
 import '../replay-demo.css';
 
-const SERVICE = 'http://127.0.0.1:8771';
+const PUBLIC_DEMO = import.meta.env.VITE_PUBLIC_DEMO === '1';
+const SERVICE = PUBLIC_DEMO ? '/demo-replay' : 'http://127.0.0.1:8771';
 const TYPES = {
   answer: { label: '回答提问', Icon: MessageCircle }, comment: { label: '课堂评论', Icon: Quote },
   keypoint: { label: '标注重点', Icon: Star }, question: { label: '提出问题', Icon: HelpCircle },
@@ -102,7 +103,7 @@ export default function ReplayDemo() {
     <header className="replay-heading">
       <div><p className="replay-eyebrow"><span /> FIVE MINUTES, TOGETHER</p>
         <h1>回到课堂，<em>一起听懂。</em></h1>
-        <p className="replay-course">{demo.subject}<span>·</span>{demo.date}<span>·</span>原课 17:30–22:30</p>
+        <p className="replay-course">{demo.subject}<span>·</span>{demo.date}<span>·</span>{demo.source === 'authored-public-sample' ? '示例 00:00–05:00' : '原课 17:30–22:30'}</p>
       </div>
       <div className="replay-demo-badge"><i /> 预分析模式 <span>05:00</span></div>
     </header>
@@ -112,7 +113,7 @@ export default function ReplayDemo() {
       <div className="replay-main-column">
         <section className="replay-player-panel" aria-label="五分钟课程回放">
           <div className="replay-video-stage">
-            {demo.mediaReady ? <video ref={video} src={SERVICE + '/media'} preload="metadata" playsInline
+            {demo.mediaReady ? <video ref={video} src={PUBLIC_DEMO ? '/demo-assets/research-methods-5min.mp4' : SERVICE + '/media'} preload="metadata" playsInline
               onTimeUpdate={() => { setPosition(video.current?.currentTime || 0); sync(); }}
               onPlay={() => { setPlaying(true); sync(true); }} onPause={() => { setPlaying(false); sync(true); }}
               onSeeked={() => { setPosition(video.current?.currentTime || 0); sync(true); }}
@@ -152,8 +153,8 @@ export default function ReplayDemo() {
         </section>
         <section className="replay-device-panel" aria-label="桌面开发板">
           <div className="replay-device-heading"><div><span className={`replay-led ${ownConnection ? 'on' : ''}`} /><h3>桌面小幽灵</h3></div><span>{ownConnection ? (board.lastCue === cue.id ? '已同步' : '正在同步…') : '屏幕预览'}</span></div>
-          <div className="replay-device-preview"><div className="replay-device-top"><span>回放陪学</span><MascotCharacter className="replay-mini-ghost" /></div><img src={`${SERVICE}/preview/${cue.id}.png?playing=${playing}`} alt={`开发板提示：${cue.shortText}`} width="256" height="160" /></div>
-          <div className="replay-device-connect">{board.ports?.length > 1 && <select aria-label="选择开发板串口" value={port} onChange={event => setPort(event.target.value)}>{board.ports.map(item => <option key={item.port} value={item.port}>{item.port}</option>)}</select>}<button onClick={attach} disabled={connecting || (board.connected && !board.owned)}>{ownConnection ? <Unplug size={14} /> : <PlugZap size={14} />}{connecting ? '正在连接…' : ownConnection ? '断开屏幕' : board.connected ? '其他页面已连接' : '连接开发板'}</button></div>
+          <div className="replay-device-preview"><div className="replay-device-top"><span>回放陪学</span><MascotCharacter className="replay-mini-ghost" /></div><img src={PUBLIC_DEMO ? `/demo-assets/cards/${cue.id}-${playing}.png` : `${SERVICE}/preview/${cue.id}.png?playing=${playing}`} alt={`开发板提示：${cue.shortText}`} width="256" height="160" /></div>
+          {PUBLIC_DEMO ? <p className="replay-course">屏幕效果预览 · USB 连接在本地版使用</p> : <div className="replay-device-connect">{board.ports?.length > 1 && <select aria-label="选择开发板串口" value={port} onChange={event => setPort(event.target.value)}>{board.ports.map(item => <option key={item.port} value={item.port}>{item.port}</option>)}</select>}<button onClick={attach} disabled={connecting || (board.connected && !board.owned)}>{ownConnection ? <Unplug size={14} /> : <PlugZap size={14} />}{connecting ? '正在连接…' : ownConnection ? '断开屏幕' : board.connected ? '其他页面已连接' : '连接开发板'}</button></div>}
           {board.error && <p className="replay-device-error">{board.error}</p>}
         </section>
       </aside>

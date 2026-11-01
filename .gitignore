@@ -32,3 +32,4 @@ Thumbs.db
 *.Zone.Identifier
 playwright-report/
 test-results/
+web/evidence/
